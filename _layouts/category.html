@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Category: {{ page.title }}"
+subtitle: "Posts in the {{ page.title }} category"
+---
+
+{% assign category_posts = site.posts | where: "categories", page.title %}
+
+<div class="grid grid-2" style="margin: 2rem 0;">
+
+{% for post in category_posts %}
+<article class="blog-post">
+  {% if post.image %}
+  <div style="height: 200px; overflow: hidden;">
+    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  {% endif %}
+  
+  <div style="padding: 1.5rem;">
+    <div class="blog-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+      {% if post.categories %}
+      <span style="margin: 0 0.5rem;">•</span>
+      {% for category in post.categories limit:1 %}
+      <span class="blog-tag">{{ category }}</span>
+      {% endfor %}
+      {% endif %}
+    </div>
+    
+    <h2 style="font-size: var(--h4-font-size); margin-bottom: 1rem;">
+      <a href="{{ post.url | relative_url }}" style="color: var(--link-color); text-decoration: none;">
+        {{ post.title }}
+      </a>
+    </h2>
+    
+    {% if post.excerpt %}
+    <p style="margin-bottom: 1rem; color: var(--text-secondary);">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+    {% endif %}
+    
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="{{ post.url | relative_url }}" style="color: var(--color-secondary); font-weight: var(--font-weight-semibold); text-decoration: none;">
+        Read More <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
+      </a>
+      {% if post.tags %}
+      <div style="display: flex; gap: 0.5rem;">
+        {% for tag in post.tags limit:2 %}
+        <span class="blog-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</article>
+{% endfor %}
+
+</div>
+
+<!-- Back to Blog -->
+<div style="margin: 2rem 0;">
+  <a href="/blog/" class="btn btn-primary">
+    <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i>Back to Blog
+  </a>
+</div>

@@ -1,0 +1,84 @@
+# Site settings
+title: "PlatformBuilds"
+tagline: "Open Source Platform Engineering & Observability"
+description: "PlatformBuilds delivers OpenSource, CNCF-compliant platforms that bridge Infrastructure, AI, and Observability. We empower regulated industries with scalable, programmable, and sustainable platforms for the airgapped privacy-first era."
+url: "https://platformbuilds.org"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name/
+  case_studies:
+    output: true
+    permalink: /:collection/:name/
+  products:
+    output: true
+    permalink: /:collection/:name/
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# SEO and Social
+twitter:
+  username: platformbuilds
+author:
+  name: Platformbuilds Team
+  twitter: platformbuilds
+
+# Contact Info
+email: hello@platformbuilds.org
+phone: "+91 8977903949"
+address: "Bengaluru, India"
+
+# Social Links
+social:
+  github: https://github.com/platformbuilds
+  linkedin: https://linkedin.com/company/platformbuilds
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: Products
+    url: /products/
+  - name: Projects
+    url: https://github.com/platformbuilds
+  - name: Community
+    url: https://github.com/platformbuilds/discussions
+  - name: Blog
+    url: /blog/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass

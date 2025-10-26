@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
+    
+    {% seo %}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/logos/platformbuilds-favicon.svg' | relative_url }}">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS - Enhanced Dante Theme with Local Fonts -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Meta Tags for Social Sharing -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{{ '/logos/platformbuilds-full-logo.svg' | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ '/logos/platformbuilds-full-logo.svg' | absolute_url }}">
+    
+    <!-- Theme Color for mobile browsers -->
+    <meta name="theme-color" content="#404040">
+    <meta name="msapplication-TileColor" content="#404040">
+</head>
+<body>
+    {% include header.html %}
+    
+    <main>
+        {{ content }}
+    </main>
+    
+    {% include footer.html %}
+    
+    <!-- Custom JavaScript -->
+    <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    
+    <!-- Analytics (Placeholder for future integration) -->
+    {% if jekyll.environment == "production" %}
+        <!-- Google Analytics 4 -->
+        <!-- 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID');
+        </script>
+        -->
+    {% endif %}
+</body>
+</html>

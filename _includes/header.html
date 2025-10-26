@@ -1,0 +1,73 @@
+<header>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/logos/logo.svg' | relative_url }}" alt="{{ site.title }}" />
+            </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+            {% for nav in site.navigation %}
+                {% assign current = nil %}
+                {% if page.url == nav.url %}
+                    {% assign current = 'active' %}
+                {% endif %}
+                <a href="{{ nav.url | relative_url }}" 
+                   class="{% if current %}active{% endif %}">
+                    {{ nav.name }}
+                </a>
+            {% endfor %}
+            
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <svg class="moon-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </button>
+            
+            <!-- CTA Button -->
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-header">
+                Get Started
+            </a>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-button" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-menu">
+            {% for nav in site.navigation %}
+                {% assign current = nil %}
+                {% if page.url == nav.url %}
+                    {% assign current = 'active' %}
+                {% endif %}
+                <a href="{{ nav.url | relative_url }}" 
+                   class="{% if current %}active{% endif %}">
+                    {{ nav.name }}
+                </a>
+            {% endfor %}
+            
+            <!-- Theme Toggle for Mobile -->
+            <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" aria-label="Toggle theme">
+                <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <svg class="moon-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </button>
+            
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-header">
+                Get Started
+            </a>
+        </div>
+    </nav>
+</header>

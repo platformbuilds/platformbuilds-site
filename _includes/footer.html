@@ -1,0 +1,113 @@
+<footer>
+    <div class="footer-content">
+        <div class="footer-title">
+            <img src="{{ '/logos/logo.svg' | relative_url }}" alt="{{ site.title }}" class="platformbuilds-logo">
+        </div>
+        
+        <div class="footer-links">
+            <!-- Company Info -->
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li>
+                        <p>
+                            {{ site.description }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    {% for nav in site.navigation %}
+                    <li>
+                        <a href="{{ nav.url | relative_url }}">
+                            {{ nav.name }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    {% if site.email %}
+                    <li>
+                        <p>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                        </p>
+                    </li>
+                    {% endif %}
+                    {% if site.phone %}
+                    <li>
+                        <p>
+                            <span><i class="fas fa-phone"></i></span>
+                            <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+                        </p>
+                    </li>
+                    {% endif %}
+                    {% if site.address %}
+                    <li>
+                        <p>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            {{ site.address }}
+                        </p>
+                    </li>
+                    {% endif %}
+                    <li>
+                        <p>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            Mumbai, India
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Social Links -->
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    {% if site.social.github %}
+                    <li>
+                        <a href="{{ site.social.github }}">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.social.linkedin %}
+                    <li>
+                        <a href="{{ site.social.linkedin }}">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.social.twitter %}
+                    <li>
+                        <a href="{{ site.social.twitter }}">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                © {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
+            </p>
+            <p>
+                Built with <i class="fas fa-heart"></i> using Jekyll & Enhanced Dante Theme
+            </p>
+        </div>
+    </div>
+</footer>

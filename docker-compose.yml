@@ -1,0 +1,15 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=production
+      - JEKYLL_LOG_LEVEL=info
+    command: bundle exec jekyll serve --host 0.0.0.0 --port 4000 --force_polling --quiet
+
+volumes:
+  bundle_cache:
