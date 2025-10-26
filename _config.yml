@@ -3,7 +3,7 @@ title: "PlatformBuilds"
 tagline: "Open Source Platform Engineering & Observability"
 description: "PlatformBuilds delivers OpenSource, CNCF-compliant platforms that bridge Infrastructure, AI, and Observability. We empower regulated industries with scalable, programmable, and sustainable platforms for the airgapped privacy-first era."
 url: "https://platformbuilds.github.io"
-baseurl: "/platformbuilds-site"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
