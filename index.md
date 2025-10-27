@@ -80,7 +80,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                     <i class="fas fa-eye" style="color: var(--text-white); font-size: 24px;"></i>
                 </div>
                 <h3>MiradorStack</h3>
-                <p>AI powered Impact to Causation RCA & Observability Platform. AI-Powered Unified Observability Platform orchestrating metrics, logs, and traces through a single REST API. Features intelligent routing, cross-engine correlation, and enterprise-grade performance with 10x RAM reduction.</p>
+                <p>AI-Powered Impact to Causation RCA & Observability Platform. Unified observability platform orchestrating metrics, logs, and traces through a single REST API. Features intelligent routing, cross-engine correlation, and enterprise-grade performance with 10x RAM reduction.</p>
                 <a href="https://github.com/platformbuilds/mirador-core" target="_blank" style="color: #6B46C1; font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
                 </a>
