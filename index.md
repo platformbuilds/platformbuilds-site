@@ -145,7 +145,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                             <div style="font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--text-primary);">eBPF</div>
                         </div>
                         <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius-lg);">
-                            <i class="fab fa-kubernetes" style="font-size: 48px; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                            <img src="{{ '/logos/kubernetes-logo.svg' | relative_url }}" alt="Kubernetes" style="width: 48px; height: 48px; margin-bottom: 0.5rem; display: block; margin-left: auto; margin-right: auto;">
                             <div style="font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--text-primary);">Kubernetes</div>
                         </div>
                         <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius-lg);">
