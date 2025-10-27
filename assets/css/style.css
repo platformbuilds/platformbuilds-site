@@ -372,6 +372,11 @@ a:hover {
   filter: brightness(0) invert(1);
 }
 
+/* Fist icon - white in dark mode */
+[data-theme="dark"] .fist-icon {
+  filter: brightness(0) invert(1);
+}
+
 /* VaultStack logo - white in dark mode */
 [data-theme="dark"] .vaultstack-logo {
   filter: brightness(0) invert(1);

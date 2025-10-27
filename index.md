@@ -10,8 +10,8 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
 <section class="section">
     <div class="container">
         <div class="text-center mb-5">
-            <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" style="color: var(--color-secondary);">
+            <div style="display: inline-flex; align-items: center; gap: 0.25rem; margin-bottom: 1rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" style="color: var(--color-secondary);">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m24 24l9.08-5.09l-5.73-3.13c5.3-4.86 10.49-6.93 12.65-6.93s3.49.66 3.49 2.66c0 2.86-2 3.19-2 9c0 4.64-3.1 5.84-5.21 5.72a7.66 7.66 0 1 1-12.25 9a7.66 7.66 0 1 1-12.25-9c-2.11.12-5.21-1.08-5.21-5.72c0-5.86-2-6.19-2-9c0-2 1.41-2.66 3.49-2.66s7.36 2.07 12.66 6.93l-5.73 3.13Zm0 0v8.67m-2.27-9.95v8.68m-2.27-9.95v8.67m-2.27-9.94v8.67m-2.27-9.94v8.67"/>
                 </svg>
                 <h2 style="margin: 0;">Sovereign AI Platform Engineering</h2>
@@ -111,8 +111,8 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
     <div class="container">
         <div class="grid grid-2" style="align-items: center; gap: 4rem;">
             <div>
-                <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32" style="color: var(--color-primary);">
+                <div style="display: inline-flex; align-items: center; gap: 0.25rem; margin-bottom: 1rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="48" height="48" class="fist-icon" style="color: var(--color-primary);">
                         <path fill="currentColor" d="m329.8 235.69l62.83-82.71l42.86 32.56l-62.83 82.75zm-12.86-9.53l66.81-88l-45-34.15l-66.81 88zm-27.48-97.78l-19.3 39.57l57-75l-42.51-32.3l-36.24 47.71zm-20.74-73.24l-46.64-35.43l-42 55.31l53.67 26.17zm107 235.52l-139-102.71l-9.92.91l4.56 2l62.16 138.43l-16.52 2.25l-57.68-128.5l-40-17.7l-4-30.84l39.41 19.42l36.36-3.33l17-34.83l-110.9-54.09l-80.68 112.51L177.6 346.67l-22.7 145.62H341V372.62l35.29-48.93L387 275.77z"/>
                     </svg>
                     <h2 style="margin: 0; color: var(--text-primary);">Our Mission</h2>
