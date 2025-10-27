@@ -58,7 +58,7 @@ navigation:
   - name: Projects
     url: https://github.com/platformbuilds
   - name: Community
-    url: https://github.com/platformbuilds/discussions
+    url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog
     url: /blog/
 
