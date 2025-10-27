@@ -74,7 +74,7 @@ permalink: /about/
 
 <div class="grid grid-2 expertise-grid">
   <div class="card">
-    <h4><img src="/logos/building.svg" alt="Platform Engineering" class="value-icon"> Platform Engineering</h4>
+    <h4><img src="/logos/building.svg" alt="Platform Engineering" class="value-icon">Platform Engineering</h4>
     <p>With deep experience in building self-service developer platforms, we help organizations create the infrastructure and tooling that makes their engineering teams highly productive.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -84,7 +84,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/shield.svg" alt="Site Reliability Engineering" class="value-icon"> Site Reliability Engineering</h4>
+    <h4><img src="/logos/shield.svg" alt="Site Reliability Engineering" class="value-icon">Site Reliability Engineering</h4>
     <p>We implement proven SRE practices that ensure your systems are reliable, scalable, and maintainable, while maintaining the right balance between innovation and stability.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -94,7 +94,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/cloud.svg" alt="Cloud-Native Architecture" class="value-icon"> Cloud-Native Architecture</h4>
+    <h4><img src="/logos/cloud.svg" alt="Cloud-Native Architecture" class="value-icon">Cloud-Native Architecture</h4>
     <p>Our team has extensive experience with Kubernetes, cloud platforms, and modern application architectures that scale from startup to enterprise.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -104,7 +104,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/eye.svg" alt="Observability & Monitoring" class="value-icon"> Observability & Monitoring</h4>
+    <h4><img src="/logos/eye.svg" alt="Observability & Monitoring" class="value-icon">Observability & Monitoring</h4>
     <p>We believe visibility is the foundation of reliability. Our comprehensive observability solutions give you the insights needed to operate complex systems with confidence.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -114,7 +114,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/brain.svg" alt="AI Inferencing Platforms" class="value-icon"> AI Inferencing Platforms</h4>
+    <h4><img src="/logos/brain.svg" alt="AI Inferencing Platforms" class="value-icon">AI Inferencing Platforms</h4>
     <p>We design and implement AI inference platforms that enable efficient model deployment and real-time predictions at scale.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -124,7 +124,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/network.svg" alt="Multi-Vendor Network Fabrics" class="value-icon"> Multi-Vendor Network Fabrics</h4>
+    <h4><img src="/logos/network.svg" alt="Multi-Vendor Network Fabrics" class="value-icon">Multi-Vendor Network Fabrics</h4>
     <p>We architect multi-vendor network solutions that provide flexible, scalable connectivity across diverse infrastructure environments.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -134,7 +134,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/lock.svg" alt="Security Engineering" class="value-icon"> Security Engineering</h4>
+    <h4><img src="/logos/lock.svg" alt="Security Engineering" class="value-icon">Security Engineering</h4>
     <p>We build comprehensive security frameworks and implement best practices to protect systems and data throughout the development lifecycle.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -144,7 +144,7 @@ permalink: /about/
     </div>
   </div>
   <div class="card">
-    <h4><img src="/logos/server.svg" alt="Programmable Data Centers" class="value-icon"> Programmable Data Centers</h4>
+    <h4><img src="/logos/server.svg" alt="Programmable Data Centers" class="value-icon">Programmable Data Centers</h4>
     <p>We create programmable data center infrastructures that adapt to changing business needs through software-defined automation and orchestration.</p>
     <div class="expertise-tags">
       <span class="tag">Air-Gapped</span>
@@ -163,19 +163,19 @@ permalink: /about/
 
 <div class="grid grid-2 values-grid">
   <div class="card">
-    <h4><img src="/logos/star.svg" alt="Excellence" class="value-icon"> Excellence</h4>
+    <h4><img src="/logos/star.svg" alt="Excellence" class="value-icon">Excellence</h4>
     <p>We strive for technical excellence in everything we do, from architecture design to implementation and operation.</p>
   </div>
   <div class="card">
-    <h4><img src="/logos/shield-checkmark.svg" alt="Pragmatism" class="value-icon"> Pragmatism</h4>
+    <h4><img src="/logos/shield-checkmark.svg" alt="Pragmatism" class="value-icon">Pragmatism</h4>
     <p>We focus on practical solutions that solve real business problems, not just the latest technologies.</p>
   </div>
   <div class="card">
-    <h4><img src="/logos/users.svg" alt="Collaboration" class="value-icon"> Collaboration</h4>
+    <h4><img src="/logos/users.svg" alt="Collaboration" class="value-icon">Collaboration</h4>
     <p>We work closely with your teams to transfer knowledge and build internal capabilities.</p>
   </div>
   <div class="card">
-    <h4><img src="/logos/linux-foundation.svg" alt="Open Source" class="value-icon"> Open Source</h4>
+    <h4><img src="/logos/linux-foundation.svg" alt="Open Source" class="value-icon">Open Source</h4>
     <p>We contribute to and leverage open-source technologies that drive innovation in our industry.</p>
   </div>
 </div>
