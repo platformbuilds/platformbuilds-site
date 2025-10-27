@@ -21,10 +21,10 @@ permalink: /contact/
 <p>Ready to discuss your platform engineering needs? We offer free consultations to understand your challenges and explore how we can help.</p>
 
 <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem;">
-  <a href="mailto:hello@platformbuilds.org" style="color: var(--color-primary); text-decoration: none;" title="Send us an email">
+  <a href="mailto:hello@platformbuilds.org" style="color: #2563eb; text-decoration: none;" title="Send us an email">
     <i class="fas fa-envelope" style="font-size: 1.5rem;"></i>
   </a>
-  <a href="tel:+918977903949" style="color: var(--color-primary); text-decoration: none;" title="Call us">
+  <a href="tel:+918977903949" style="color: #2563eb; text-decoration: none;" title="Call us">
     <i class="fas fa-phone" style="font-size: 1.5rem;"></i>
   </a>
 </div>
