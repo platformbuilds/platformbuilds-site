@@ -45,7 +45,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                 </div>
                 <h3>OpenTelemetry Contributions</h3>
                 <p>We are active contributors to the OpenTelemetry ecosystem with 2 production-grade plugins. Our AI-powered observability solutions enhance monitoring for population-scale platforms.</p>
-                <a href="https://github.com/platformbuilds/opentelemetry-collector-contrib" target="_blank" style="color: var(--color-tertiary); font-weight: var(--font-weight-semibold); text-decoration: none;">
+                <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=aarvee11" target="_blank" style="color: var(--color-tertiary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View Contributions <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
                 </a>
             </div>
