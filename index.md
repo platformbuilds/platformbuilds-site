@@ -23,7 +23,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                 </div>
                 <h3>Sovereign AI Platforms</h3>
                 <p>Population-scale AI platforms with complete data sovereignty. Built on open hardware foundations including Open Compute and SONiC networking for maximum control and transparency.</p>
-                <a href="/services/platform-engineering/" style="color: var(--color-secondary); font-weight: var(--font-weight-semibold); text-decoration: none;">
+                <a href="/projects/platform-engineering/" style="color: var(--color-secondary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     Learn More <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
                 </a>
             </div>

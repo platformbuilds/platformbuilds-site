@@ -16,7 +16,7 @@ plugins:
 
 # Collections
 collections:
-  services:
+  projects:
     output: true
     permalink: /:collection/:name/
   case_studies:
@@ -59,15 +59,15 @@ navigation:
     url: /projects/
     children:
       - name: Cosmolet
-        url: /services/cosmolet/
+        url: /projects/cosmolet/
       - name: MiradorStack
-        url: /services/miradorstack/
+        url: /projects/miradorstack/
       - name: Platform Engineering
-        url: /services/platform-engineering/
+        url: /projects/platform-engineering/
       - name: Site Reliability Engineering
-        url: /services/site-reliability-engineering/
+        url: /projects/site-reliability-engineering/
       - name: Telegen
-        url: /services/telegen/
+        url: /projects/telegen/
   - name: Community
     url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog

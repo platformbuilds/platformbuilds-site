@@ -27,7 +27,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Network performance analytics</li>
 <li>Container networking for AI</li>
 </ul>
-<p><a href="/services/cosmolet/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/cosmolet" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p><a href="/projects/cosmolet/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/cosmolet" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 
 <div class="card">
@@ -39,7 +39,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Multi-LLM abstraction layers</li>
 <li>Regulatory compliance frameworks</li>
 </ul>
-<p><a href="/services/platform-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p><a href="/projects/platform-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 </div>
 
@@ -55,7 +55,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>AI-powered anomaly detection</li>
 <li>Privacy-first architecture</li>
 </ul>
-<p><a href="/services/miradorstack/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/miradorstack" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p><a href="/projects/miradorstack/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/miradorstack" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 
 <div class="card">
@@ -67,7 +67,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Prometheus/OTLP export</li>
 <li>Minimal performance overhead</li>
 </ul>
-<p><a href="/services/telegen/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/telegen" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p><a href="/projects/telegen/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/telegen" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 
 <div class="card">
@@ -79,7 +79,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Chaos engineering</li>
 <li>Error budget management</li>
 </ul>
-<p><a href="/services/site-reliability-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p><a href="/projects/site-reliability-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 </div>
 
