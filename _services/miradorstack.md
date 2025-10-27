@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "MiradorStack"
 slug: "miradorstack"
 icon: "fas fa-eye"

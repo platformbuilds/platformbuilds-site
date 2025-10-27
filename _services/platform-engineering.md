@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Sovereign AI Platforms at Population Scale"
 slug: "platform-engineering"
 icon: "fas fa-brain"

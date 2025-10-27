@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Cloud-Native Observability"
 slug: "observability"
 icon: "fas fa-eye"

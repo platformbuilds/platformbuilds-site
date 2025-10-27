@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Cosmolet"
 slug: "cosmolet"
 icon: "fas fa-network-wired"

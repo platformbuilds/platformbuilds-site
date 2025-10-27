@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Telegen"
 slug: "telegen"
 icon: "fas fa-satellite-dish"
