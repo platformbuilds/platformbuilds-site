@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-content">
         <div class="footer-title">
-            <img src="{{ '/logos/logo.svg' | relative_url }}" alt="{{ site.title }}" class="platformbuilds-logo">
+            <img src="{{ '/logos/logo.svg' | relative_url }}" alt="{{ site.title }}" class="platformbuilds-logo footer-logo">
         </div>
         
         <div class="footer-links">
@@ -22,11 +22,28 @@
                 <h4>Quick Links</h4>
                 <ul>
                     {% for nav in site.navigation %}
-                    <li>
-                        <a href="{{ nav.url | relative_url }}">
-                            {{ nav.name }}
-                        </a>
-                    </li>
+                    {% if nav.children %}
+                        <!-- Projects dropdown items -->
+                        {% for child in nav.children %}
+                        <li>
+                            <a href="{{ child.url | relative_url }}">
+                                {{ child.name }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    {% elsif nav.url contains 'http' %}
+                        <li>
+                            <a href="{{ nav.url }}" target="_blank" rel="noopener">
+                                {{ nav.name }}
+                            </a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{{ nav.url | relative_url }}">
+                                {{ nav.name }}
+                            </a>
+                        </li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
@@ -104,9 +121,6 @@
         <div class="footer-bottom">
             <p>
                 © {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
-            </p>
-            <p>
-                Built with <i class="fas fa-heart"></i> using Jekyll & Enhanced Dante Theme
             </p>
         </div>
     </div>

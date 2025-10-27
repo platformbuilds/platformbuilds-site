@@ -323,6 +323,29 @@ a:hover {
   transition: var(--transition-fast);
 }
 
+/* Footer logo - centered and responsive */
+.footer-logo {
+  height: 4rem;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+  transition: var(--transition-fast);
+}
+
+/* Responsive footer logo sizing */
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    height: 2.5rem;
+  }
+}
+
 /* Dark theme adjustments for logo */
 [data-theme="dark"] .platformbuilds-logo {
   filter: brightness(0) invert(1) brightness(1.2) contrast(1.1);
@@ -340,8 +363,6 @@ a:hover {
     height: 2em;
   }
 }
-
-/* Cosmolet logo - white in dark mode */
 [data-theme="dark"] .cosmolet-logo {
   filter: brightness(0) invert(1);
 }
