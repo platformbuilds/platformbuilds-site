@@ -52,7 +52,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         </div>
         
         <!-- Additional Projects Row -->
-        <div class="grid grid-2" style="margin-top: 2rem;">
+        <div class="grid grid-3" style="margin-top: 2rem;">
             <div class="card">
                 <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                     <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 24px;"></i>
@@ -71,6 +71,17 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                 <h3>OpenTelemetry Isolation Forest</h3>
                 <p>Contribution to the OpenTelemetry Collector, adding a custom processor for anomaly detection using Isolation Forest on streaming spans for intelligent observability.</p>
                 <a href="https://github.com/platformbuilds/opentelemetry-collector-contrib" target="_blank" style="color: #FF6B35; font-weight: var(--font-weight-semibold); text-decoration: none;">
+                    View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
+                </a>
+            </div>
+            
+            <div class="card">
+                <div style="width: 64px; height: 64px; background: #6B46C1; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <i class="fas fa-eye" style="color: var(--text-white); font-size: 24px;"></i>
+                </div>
+                <h3>MiradorStack</h3>
+                <p>AI-Powered Unified Observability Platform orchestrating metrics, logs, and traces through a single REST API. Features intelligent routing, cross-engine correlation, and enterprise-grade performance with 10x RAM reduction.</p>
+                <a href="https://github.com/platformbuilds/mirador-core" target="_blank" style="color: #6B46C1; font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
                 </a>
             </div>
