@@ -10,7 +10,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
 <section class="section">
     <div class="container">
         <div class="text-center mb-5">
-            <h2>🧠 Sovereign AI Platform Engineering</h2>
+            <h2>Sovereign AI Platform Engineering</h2>
             <p style="font-size: var(--font-size-lg); max-width: 700px; margin: 0 auto;">
                 We build sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations. Our platform engineering approach empowers AI capabilities with complete sovereignty.
             </p>
@@ -52,29 +52,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         </div>
         
         <!-- Additional Projects Row -->
-        <div class="grid grid-3" style="margin-top: 2rem;">
-            <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-shield-alt" style="color: var(--text-white); font-size: 24px;"></i>
-                </div>
-                <h3>Cosmonic</h3>
-                <p>A Virtual NIC stack focused on resiliency and stateful failover; includes kernel/eBPF and DPDK variants plus a high‑performance LB component for true NIC level resiliency.</p>
-                <a href="https://github.com/platformbuilds/cosmonic" target="_blank" style="color: var(--color-primary); font-weight: var(--font-weight-semibold); text-decoration: none;">
-                    View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
-                </a>
-            </div>
-            
-            <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-warning); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-router" style="color: var(--text-white); font-size: 24px;"></i>
-                </div>
-                <h3>Telegen-Sonic</h3>
-                <p>eBPF based telemetry collector and REST API interface agent to perform observability on SONiC OpenSource Network Operating Systems with ERSPAN/port-mirroring helpers.</p>
-                <a href="https://github.com/platformbuilds/telegen-sonic" target="_blank" style="color: var(--color-warning); font-weight: var(--font-weight-semibold); text-decoration: none;">
-                    View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
-                </a>
-            </div>
-            
+        <div class="grid grid-1" style="margin-top: 2rem; max-width: 400px; margin-left: auto; margin-right: auto;">
             <div class="card">
                 <div style="width: 64px; height: 64px; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                     <i class="fas fa-search" style="color: var(--text-white); font-size: 24px;"></i>
@@ -94,7 +72,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
     <div class="container">
         <div class="grid grid-2" style="align-items: center; gap: 4rem;">
             <div>
-                <h2>🌟 Our Mission</h2>
+                <h2>Our Mission</h2>
                 <p style="font-size: var(--font-size-lg); margin-bottom: 2rem;">
                     We fundamentally focus on Platform Engineering to build Sovereign AI Platforms at Population Scale. Driven by data and AI, we empower AI capabilities through open hardware innovations.
                 </p>
