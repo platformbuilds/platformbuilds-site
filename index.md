@@ -52,7 +52,18 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         </div>
         
         <!-- Additional Projects Row -->
-        <div class="grid grid-1" style="margin-top: 2rem; max-width: 400px; margin-left: auto; margin-right: auto;">
+        <div class="grid grid-2" style="margin-top: 2rem;">
+            <div class="card">
+                <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 24px;"></i>
+                </div>
+                <h3>Cosmolet</h3>
+                <p>A Kubernetes controller that automatically advertises service IPs via BGP for bare-metal clusters. Enables seamless integration between Kubernetes services and network infrastructure through FRR integration.</p>
+                <a href="https://github.com/platformbuilds/cosmolet" target="_blank" style="color: var(--color-primary); font-weight: var(--font-weight-semibold); text-decoration: none;">
+                    View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
+                </a>
+            </div>
+            
             <div class="card">
                 <div style="width: 64px; height: 64px; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                     <i class="fas fa-search" style="color: var(--text-white); font-size: 24px;"></i>
