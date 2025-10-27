@@ -18,51 +18,79 @@ excerpt: "Next-generation observability stack unifying metrics, logs, and traces
 <div class="card">
 <h3>Core Observability Components</h3>
 
-**MiradorStack Platform**
-- Unified telemetry collection and processing
-- Deep OpenTelemetry integration for vendor neutrality
-- Privacy-first architecture for regulated industries
-- Airgapped deployment support for secure environments
+<div class="card">
+<h4>MiradorStack Platform</h4>
+<ul>
+<li>Unified telemetry collection and processing</li>
+<li>Deep OpenTelemetry integration for vendor neutrality</li>
+<li>Privacy-first architecture for regulated industries</li>
+<li>Airgapped deployment support for secure environments</li>
+</ul>
+</div>
 
-**Telegen Agent**
-- Single agent for multiple telemetry signals
-- Host-level eBPF observability with minimal overhead
-- Prometheus and OTLP export capabilities
-- Eliminates agent sprawl and resource conflicts
+<div class="card">
+<h4>Telegen Agent</h4>
+<ul>
+<li>Single agent for multiple telemetry signals</li>
+<li>Host-level eBPF observability with minimal overhead</li>
+<li>Prometheus and OTLP export capabilities</li>
+<li>Eliminates agent sprawl and resource conflicts</li>
+</ul>
+</div>
 
-**Advanced Analytics**
-- Isolation Forest processor for anomaly detection
-- Real-time root cause analysis (RCA) capabilities
-- Machine learning-powered insights
-- Automated pattern recognition and alerting
+<div class="card">
+<h4>Advanced Analytics</h4>
+<ul>
+<li>Isolation Forest processor for anomaly detection</li>
+<li>Real-time root cause analysis (RCA) capabilities</li>
+<li>Machine learning-powered insights</li>
+<li>Automated pattern recognition and alerting</li>
+</ul>
+</div>
 
-**Network Observability**
-- Telegen-Sonic for SONiC network monitoring
-- ERSPAN and port-mirroring integration
-- BGP route monitoring and analysis
-- High-performance packet processing with DPDK
+<div class="card">
+<h4>Network Observability</h4>
+<ul>
+<li>Telegen-Sonic for SONiC network monitoring</li>
+<li>ERSPAN and port-mirroring integration</li>
+<li>BGP route monitoring and analysis</li>
+<li>High-performance packet processing with DPDK</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>What We Deliver</h3>
 
-**Complete Observability Stack**
-- MiradorStack deployment and configuration
-- Grafana integration with custom dashboards
-- Prometheus-compatible metrics collection
-- Jaeger-compatible distributed tracing
+<div class="card">
+<h4>Complete Observability Stack</h4>
+<ul>
+<li>MiradorStack deployment and configuration</li>
+<li>Grafana integration with custom dashboards</li>
+<li>Prometheus-compatible metrics collection</li>
+<li>Jaeger-compatible distributed tracing</li>
+</ul>
+</div>
 
-**Privacy-First Architecture**
-- Airgapped deployment capabilities
-- Data sovereignty and compliance support
-- Encrypted data transport and storage
-- Role-based access control (RBAC)
+<div class="card">
+<h4>Privacy-First Architecture</h4>
+<ul>
+<li>Airgapped deployment capabilities</li>
+<li>Data sovereignty and compliance support</li>
+<li>Encrypted data transport and storage</li>
+<li>Role-based access control (RBAC)</li>
+</ul>
+</div>
 
-**Intelligent Monitoring**
-- ML-powered anomaly detection
-- Automated root cause analysis
-- Predictive alerting and forecasting
-- Custom metric correlation and analysis
+<div class="card">
+<h4>Intelligent Monitoring</h4>
+<ul>
+<li>ML-powered anomaly detection</li>
+<li>Automated root cause analysis</li>
+<li>Predictive alerting and forecasting</li>
+<li>Custom metric correlation and analysis</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
@@ -78,65 +106,101 @@ excerpt: "Next-generation observability stack unifying metrics, logs, and traces
 <div class="card">
 <h3>SRE Maturity Assessment</h3>
 
-We help organizations progress through SRE maturity levels:
+<p>We help organizations progress through SRE maturity levels:</p>
 
-**Level 1: Reactive Operations**
-- Manual processes and firefighting
-- Limited monitoring and alerting
-- No formal incident response
+<div class="card">
+<h4>Level 1: Reactive Operations</h4>
+<ul>
+<li>Manual processes and firefighting</li>
+<li>Limited monitoring and alerting</li>
+<li>No formal incident response</li>
+</ul>
+</div>
 
-**Level 2: Basic SRE Practices**
-- Initial SLO definition
-- Structured incident response
-- Basic automation
+<div class="card">
+<h4>Level 2: Basic SRE Practices</h4>
+<ul>
+<li>Initial SLO definition</li>
+<li>Structured incident response</li>
+<li>Basic automation</li>
+</ul>
+</div>
 
-**Level 3: Advanced SRE**
-- Comprehensive error budget management
-- Chaos engineering practices
-- Full automation of common tasks
+<div class="card">
+<h4>Level 3: Advanced SRE</h4>
+<ul>
+<li>Comprehensive error budget management</li>
+<li>Chaos engineering practices</li>
+<li>Full automation of common tasks</li>
+</ul>
+</div>
 
-**Level 4: SRE Excellence**
-- Predictive capacity planning
-- Advanced reliability patterns
-- Organization-wide SRE culture
+<div class="card">
+<h4>Level 4: SRE Excellence</h4>
+<ul>
+<li>Predictive capacity planning</li>
+<li>Advanced reliability patterns</li>
+<li>Organization-wide SRE culture</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Technology Stack</h3>
 
-**Core Components**
-- **Go**: High-performance backend services
-- **eBPF**: Kernel-level observability without overhead
-- **OpenTelemetry**: Vendor-neutral telemetry standard
-- **Kubernetes**: Cloud-native deployment and scaling
+<div class="card">
+<h4>Core Components</h4>
+<ul>
+<li><strong>Go</strong>: High-performance backend services</li>
+<li><strong>eBPF</strong>: Kernel-level observability without overhead</li>
+<li><strong>OpenTelemetry</strong>: Vendor-neutral telemetry standard</li>
+<li><strong>Kubernetes</strong>: Cloud-native deployment and scaling</li>
+</ul>
+</div>
 
-**Integration Ecosystem**
-- **Grafana**: Rich visualization and dashboarding
-- **Prometheus**: Time-series metrics storage
-- **Jaeger**: Distributed tracing analysis
-- **Custom APIs**: RESTful interfaces for integration
+<div class="card">
+<h4>Integration Ecosystem</h4>
+<ul>
+<li><strong>Grafana</strong>: Rich visualization and dashboarding</li>
+<li><strong>Prometheus</strong>: Time-series metrics storage</li>
+<li><strong>Jaeger</strong>: Distributed tracing analysis</li>
+<li><strong>Custom APIs</strong>: RESTful interfaces for integration</li>
+</ul>
+</div>
 
-**Advanced Features**
-- **Machine Learning**: Isolation Forest anomaly detection
-- **Network Monitoring**: SONiC integration for network observability
-- **High Performance**: DPDK for packet processing
-- **Security**: End-to-end encryption and access control
+<div class="card">
+<h4>Advanced Features</h4>
+<ul>
+<li><strong>Machine Learning</strong>: Isolation Forest anomaly detection</li>
+<li><strong>Network Monitoring</strong>: SONiC integration for network observability</li>
+<li><strong>High Performance</strong>: DPDK for packet processing</li>
+<li><strong>Security</strong>: End-to-end encryption and access control</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Training and Development</h3>
 
-**SRE Fundamentals Course**
-- Introduction to SRE principles
-- Hands-on SLI/SLO workshop
-- Incident response simulation
-- Tool training and certification
+<div class="card">
+<h4>SRE Fundamentals Course</h4>
+<ul>
+<li>Introduction to SRE principles</li>
+<li>Hands-on SLI/SLO workshop</li>
+<li>Incident response simulation</li>
+<li>Tool training and certification</li>
+</ul>
+</div>
 
-**Advanced SRE Practices**
-- Chaos engineering workshops
-- Performance optimization techniques
-- Capacity planning methodologies
-- Leadership and communication skills
+<div class="card">
+<h4>Advanced SRE Practices</h4>
+<ul>
+<li>Chaos engineering workshops</li>
+<li>Performance optimization techniques</li>
+<li>Capacity planning methodologies</li>
+<li>Leadership and communication skills</li>
+</ul>
+</div>
 </div>
 
 <div class="card">

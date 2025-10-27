@@ -18,73 +18,113 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <div class="card">
 <h3>Core Features</h3>
 
-**Unified Telemetry Platform**
-- Single pane of glass for all observability data
-- Deep OpenTelemetry integration for vendor neutrality
-- Real-time data processing and analysis
-- Scalable architecture for enterprise workloads
+<div class="card">
+<h4>Unified Telemetry Platform</h4>
+<ul>
+<li>Single pane of glass for all observability data</li>
+<li>Deep OpenTelemetry integration for vendor neutrality</li>
+<li>Real-time data processing and analysis</li>
+<li>Scalable architecture for enterprise workloads</li>
+</ul>
+</div>
 
-**Privacy-First Architecture**
-- Airgapped deployment support
-- Data sovereignty and compliance
-- End-to-end encryption
-- Role-based access control (RBAC)
+<div class="card">
+<h4>Privacy-First Architecture</h4>
+<ul>
+<li>Airgapped deployment support</li>
+<li>Data sovereignty and compliance</li>
+<li>End-to-end encryption</li>
+<li>Role-based access control (RBAC)</li>
+</ul>
+</div>
 
-**Advanced Analytics**
-- Machine learning-powered anomaly detection
-- Automated root cause analysis (RCA)
-- Predictive alerting and forecasting
-- Custom metric correlation
+<div class="card">
+<h4>Advanced Analytics</h4>
+<ul>
+<li>Machine learning-powered anomaly detection</li>
+<li>Automated root cause analysis (RCA)</li>
+<li>Predictive alerting and forecasting</li>
+<li>Custom metric correlation</li>
+</ul>
+</div>
 
-**Enterprise Integration**
-- Grafana datasource plugin
-- Prometheus-compatible metrics API
-- Jaeger-compatible tracing interface
-- REST APIs for custom integrations
+<div class="card">
+<h4>Enterprise Integration</h4>
+<ul>
+<li>Grafana datasource plugin</li>
+<li>Prometheus-compatible metrics API</li>
+<li>Jaeger-compatible tracing interface</li>
+<li>REST APIs for custom integrations</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Components</h3>
 
-**Mirador-Core**
-- Central data processing engine
-- High-performance Go implementation
-- Horizontal scaling capabilities
-- Real-time stream processing
+<div class="card">
+<h4>Mirador-Core</h4>
+<ul>
+<li>Central data processing engine</li>
+<li>High-performance Go implementation</li>
+<li>Horizontal scaling capabilities</li>
+<li>Real-time stream processing</li>
+</ul>
+</div>
 
-**Mirador-RCA**
-- Root cause analysis microservice
-- ML-powered incident correlation
-- Automated problem detection
-- Historical analysis and trends
+<div class="card">
+<h4>Mirador-RCA</h4>
+<ul>
+<li>Root cause analysis microservice</li>
+<li>ML-powered incident correlation</li>
+<li>Automated problem detection</li>
+<li>Historical analysis and trends</li>
+</ul>
+</div>
 
-**Mirador-UI**
-- Modern TypeScript-based interface
-- Responsive design for all devices
-- Real-time data visualization
-- Customizable dashboards
+<div class="card">
+<h4>Mirador-UI</h4>
+<ul>
+<li>Modern TypeScript-based interface</li>
+<li>Responsive design for all devices</li>
+<li>Real-time data visualization</li>
+<li>Customizable dashboards</li>
+</ul>
+</div>
 
-**Mirador-NRT-Aggregator**
-- Near-real-time signal aggregation
-- Stream processing pipeline
-- Efficient data compression
-- Multi-source telemetry fusion
+<div class="card">
+<h4>Mirador-NRT-Aggregator</h4>
+<ul>
+<li>Near-real-time signal aggregation</li>
+<li>Stream processing pipeline</li>
+<li>Efficient data compression</li>
+<li>Multi-source telemetry fusion</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Grafana Integration</h3>
 
-**Native Datasource Plugin**
-- Seamless Grafana integration
-- Pre-built dashboard templates
-- Custom query language support
-- Real-time data streaming
+<div class="card">
+<h4>Native Datasource Plugin</h4>
+<ul>
+<li>Seamless Grafana integration</li>
+<li>Pre-built dashboard templates</li>
+<li>Custom query language support</li>
+<li>Real-time data streaming</li>
+</ul>
+</div>
 
-**Enhanced Visualization**
-- Service topology maps
-- Dependency relationship graphs
-- Performance heatmaps
-- Alert correlation views
+<div class="card">
+<h4>Enhanced Visualization</h4>
+<ul>
+<li>Service topology maps</li>
+<li>Dependency relationship graphs</li>
+<li>Performance heatmaps</li>
+<li>Alert correlation views</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
@@ -100,49 +140,103 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <div class="card">
 <h3>Deployment Options</h3>
 
-**Cloud-Native**
-- Kubernetes-native deployment
-- Helm charts for easy installation
-- Auto-scaling and self-healing
-- Multi-cluster support
+<div class="card">
+<h4>Cloud-Native</h4>
+<ul>
+<li>Kubernetes-native deployment</li>
+<li>Helm charts for easy installation</li>
+<li>Auto-scaling and self-healing</li>
+<li>Multi-cluster support</li>
+</ul>
+</div>
 
-**Airgapped Environments**
-- Offline installation packages
-- No external dependencies
-- Complete data sovereignty
-- Compliance-ready architecture
+<div class="card">
+<h4>Airgapped Environments</h4>
+<ul>
+<li>Offline installation packages</li>
+<li>No external dependencies</li>
+<li>Complete data sovereignty</li>
+<li>Compliance-ready architecture</li>
+</ul>
+</div>
 
-**Edge Computing**
-- Lightweight edge agents
-- Local processing capabilities
-- Bandwidth optimization
-- Intermittent connectivity support
+<div class="card">
+<h4>Edge Computing</h4>
+<ul>
+<li>Lightweight edge agents</li>
+<li>Local processing capabilities</li>
+<li>Bandwidth optimization</li>
+<li>Intermittent connectivity support</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Getting Started</h3>
 
-**Quick Start**
-1. Clone the [MiradorStack repository](https://github.com/platformbuilds/miradorstack)
-2. Follow the installation guide in the README
-3. Deploy using provided Helm charts
-4. Configure OpenTelemetry collectors
+<div class="card">
+<h4>Quick Installation</h4>
+<ul>
+<li>Single-command deployment</li>
+<li>Pre-configured dashboards</li>
+<li>Sample data sources</li>
+<li>Documentation and guides</li>
+</ul>
+</div>
 
-**Production Deployment**
-1. Review architecture documentation
-2. Plan capacity and scaling requirements
-3. Configure security and access controls
-4. Set up monitoring and alerting
+<div class="card">
+<h4>Integration Guides</h4>
+<ul>
+<li>Step-by-step tutorials</li>
+<li>API documentation</li>
+<li>Configuration examples</li>
+<li>Best practices</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Support Resources</h4>
+<ul>
+<li>Community forums</li>
+<li>Professional services</li>
+<li>Training programs</li>
+<li>24/7 technical support</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Community Support</h3>
 
-**Open Source Advantage**
-- **Transparent**: Full source code visibility and audit capability
-- **Vendor Neutral**: No lock-in, community-driven development
-- **Customizable**: Modify and extend to meet specific requirements
-- **Cost Effective**: No licensing fees, pay only for infrastructure
+<div class="card">
+<h4>Open Source</h4>
+<ul>
+<li>GitHub repositories</li>
+<li>Community contributions</li>
+<li>Open development process</li>
+<li>Transparent roadmap</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Knowledge Base</h4>
+<ul>
+<li>Comprehensive documentation</li>
+<li>Troubleshooting guides</li>
+<li>Video tutorials</li>
+<li>Case studies</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Community Events</h4>
+<ul>
+<li>Webinars and workshops</li>
+<li>Meetups and conferences</li>
+<li>User group meetings</li>
+<li>Online forums</li>
+</ul>
+</div>
 </div>
 
 <p>MiradorStack is open source under the Apache 2.0 license, ensuring:</p>

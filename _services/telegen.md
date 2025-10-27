@@ -18,263 +18,406 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <div class="card">
 <h3>Core Philosophy</h3>
 
-**Agent Consolidation**
-- Replace multiple monitoring agents with one
-- Reduce resource consumption and conflicts
-- Simplify deployment and management
-- Unified configuration and updates
+<div class="card">
+<h4>Agent Consolidation</h4>
+<ul>
+<li>Replace multiple monitoring agents with one</li>
+<li>Reduce resource consumption and conflicts</li>
+<li>Simplify deployment and management</li>
+<li>Unified configuration and updates</li>
+</ul>
+</div>
 
-**eBPF-Powered Efficiency**
-- Kernel-level observability without overhead
-- No application instrumentation required
-- Real-time data collection
-- Minimal performance impact
+<div class="card">
+<h4>eBPF-Powered Efficiency</h4>
+<ul>
+<li>Kernel-level observability without overhead</li>
+<li>No application instrumentation required</li>
+<li>Real-time data collection</li>
+<li>Minimal performance impact</li>
+</ul>
+</div>
 
-**Standards Compliance**
-- Prometheus metrics export
-- OpenTelemetry Protocol (OTLP) support
-- Industry-standard formats
-- Vendor-neutral telemetry
+<div class="card">
+<h4>Standards Compliance</h4>
+<ul>
+<li>Prometheus metrics export</li>
+<li>OpenTelemetry Protocol (OTLP) support</li>
+<li>Industry-standard formats</li>
+<li>Vendor-neutral telemetry</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Key Features</h3>
 
-**Comprehensive Telemetry**
-- System metrics (CPU, memory, disk, network)
-- Application performance metrics
-- Security and compliance data
-- Custom metric collection
+<div class="card">
+<h4>Comprehensive Telemetry</h4>
+<ul>
+<li>System metrics (CPU, memory, disk, network)</li>
+<li>Application performance metrics</li>
+<li>Security and compliance data</li>
+<li>Custom metric collection</li>
+</ul>
+</div>
 
-**eBPF Technology**
-- Kernel-level instrumentation
-- Safe and secure execution
-- Dynamic program loading
-- No kernel module dependencies
+<div class="card">
+<h4>eBPF Technology</h4>
+<ul>
+<li>Kernel-level instrumentation</li>
+<li>Safe and secure execution</li>
+<li>Dynamic program loading</li>
+<li>No kernel module dependencies</li>
+</ul>
+</div>
 
-**Export Flexibility**
-- Prometheus scraping endpoint
-- OTLP gRPC and HTTP export
-- Custom output formats
-- Real-time streaming
+<div class="card">
+<h4>Export Flexibility</h4>
+<ul>
+<li>Prometheus scraping endpoint</li>
+<li>OTLP gRPC and HTTP export</li>
+<li>Custom output formats</li>
+<li>Real-time streaming</li>
+</ul>
+</div>
 
-**Helm Deployment**
-- Kubernetes-native deployment
-- DaemonSet configuration
-- Auto-discovery and scaling
-- GitOps-friendly
+<div class="card">
+<h4>Helm Deployment</h4>
+<ul>
+<li>Kubernetes-native deployment</li>
+<li>DaemonSet configuration</li>
+<li>Auto-discovery and scaling</li>
+<li>GitOps-friendly</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Architecture</h3>
 
-**eBPF Programs**
-- System call tracing
-- Network traffic analysis
-- Process monitoring
-- File system events
+<div class="card">
+<h4>eBPF Programs</h4>
+<ul>
+<li>System call tracing</li>
+<li>Network traffic analysis</li>
+<li>Process monitoring</li>
+<li>File system events</li>
+</ul>
+</div>
 
-**Data Processing**
-- Real-time aggregation
-- Metric calculation
-- Event correlation
-- Anomaly detection
+<div class="card">
+<h4>Data Processing</h4>
+<ul>
+<li>Real-time aggregation</li>
+<li>Metric calculation</li>
+<li>Event correlation</li>
+<li>Anomaly detection</li>
+</ul>
+</div>
 
-**Export Engines**
-- Prometheus metrics server
-- OTLP gRPC client
-- HTTP/JSON endpoints
-- Custom plugin support
+<div class="card">
+<h4>Export Engines</h4>
+<ul>
+<li>Prometheus metrics server</li>
+<li>OTLP gRPC client</li>
+<li>HTTP/JSON endpoints</li>
+<li>Custom plugin support</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Telemetry Categories</h3>
 
-**System Performance**
-- CPU utilization and load
-- Memory usage and allocation
-- Disk I/O and latency
-- Network throughput and errors
+<div class="card">
+<h4>System Performance</h4>
+<ul>
+<li>CPU utilization and load</li>
+<li>Memory usage and allocation</li>
+<li>Disk I/O and latency</li>
+<li>Network throughput and errors</li>
+</ul>
+</div>
 
-**Application Insights**
-- Process lifecycle events
-- Resource consumption tracking
-- Inter-process communication
-- Application-specific metrics
+<div class="card">
+<h4>Application Insights</h4>
+<ul>
+<li>Process lifecycle events</li>
+<li>Resource consumption tracking</li>
+<li>Inter-process communication</li>
+<li>Application-specific metrics</li>
+</ul>
+</div>
 
-**Security Monitoring**
-- System call auditing
-- File access monitoring
-- Network connection tracking
-- Privilege escalation detection
+<div class="card">
+<h4>Security Monitoring</h4>
+<ul>
+<li>System call auditing</li>
+<li>File access monitoring</li>
+<li>Network connection tracking</li>
+<li>Privilege escalation detection</li>
+</ul>
+</div>
 
-**Network Observability**
-- Traffic flow analysis
-- Protocol distribution
-- Connection state tracking
-- Bandwidth utilization
+<div class="card">
+<h4>Network Observability</h4>
+<ul>
+<li>Traffic flow analysis</li>
+<li>Protocol distribution</li>
+<li>Connection state tracking</li>
+<li>Bandwidth utilization</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Deployment Options</h3>
 
-**Kubernetes DaemonSet**
-- Automatic node coverage
-- Resource limit enforcement
-- Configuration via ConfigMaps
-- Integration with monitoring stack
+<div class="card">
+<h4>Kubernetes DaemonSet</h4>
+<ul>
+<li>Automatic node coverage</li>
+<li>Resource limit enforcement</li>
+<li>Configuration via ConfigMaps</li>
+<li>Integration with monitoring stack</li>
+</ul>
+</div>
 
-**Standalone Installation**
-- Direct binary deployment
-- Systemd service integration
-- Configuration file management
-- Manual scaling
+<div class="card">
+<h4>Standalone Installation</h4>
+<ul>
+<li>Direct binary deployment</li>
+<li>Systemd service integration</li>
+<li>Configuration file management</li>
+<li>Manual scaling</li>
+</ul>
+</div>
 
-**Container Deployment**
-- Docker container support
-- Privileged execution mode
-- Volume mounting for access
-- Environment-based configuration
+<div class="card">
+<h4>Container Deployment</h4>
+<ul>
+<li>Docker container support</li>
+<li>Privileged execution mode</li>
+<li>Volume mounting for access</li>
+<li>Environment-based configuration</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Integration Ecosystem</h3>
 
-**Prometheus Stack**
-- Native Prometheus metrics
-- Grafana dashboard templates
-- AlertManager integration
-- Recording rule examples
+<div class="card">
+<h4>Prometheus Stack</h4>
+<ul>
+<li>Native Prometheus metrics</li>
+<li>Grafana dashboard templates</li>
+<li>AlertManager integration</li>
+<li>Recording rule examples</li>
+</ul>
+</div>
 
-**OpenTelemetry Ecosystem**
-- OTLP collector integration
-- Jaeger tracing support
-- Zipkin compatibility
-- Vendor-neutral telemetry
+<div class="card">
+<h4>OpenTelemetry Ecosystem</h4>
+<ul>
+<li>OTLP collector integration</li>
+<li>Jaeger tracing support</li>
+<li>Zipkin compatibility</li>
+<li>Vendor-neutral telemetry</li>
+</ul>
+</div>
 
-**Popular Monitoring Tools**
-- DataDog agent replacement
-- New Relic integration
-- Splunk compatibility
-- Custom webhook support
+<div class="card">
+<h4>Popular Monitoring Tools</h4>
+<ul>
+<li>DataDog agent replacement</li>
+<li>New Relic integration</li>
+<li>Splunk compatibility</li>
+<li>Custom webhook support</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Benefits</h3>
 
-**Cost Reduction**
-- Eliminate multiple agent licenses
-- Reduce infrastructure overhead
-- Lower operational complexity
-- Simplified vendor management
+<div class="card">
+<h4>Cost Reduction</h4>
+<ul>
+<li>Eliminate multiple agent licenses</li>
+<li>Reduce infrastructure overhead</li>
+<li>Lower operational complexity</li>
+<li>Simplified vendor management</li>
+</ul>
+</div>
 
-**Performance Optimization**
-- Minimal CPU and memory usage
-- Reduced network overhead
-- Efficient data collection
-- Kernel-level optimization
+<div class="card">
+<h4>Performance Optimization</h4>
+<ul>
+<li>Minimal CPU and memory usage</li>
+<li>Reduced network overhead</li>
+<li>Efficient data collection</li>
+<li>Kernel-level optimization</li>
+</ul>
+</div>
 
-**Operational Simplicity**
-- Single agent to manage
-- Unified configuration
-- Centralized updates
-- Consistent monitoring
+<div class="card">
+<h4>Operational Simplicity</h4>
+<ul>
+<li>Single agent to manage</li>
+<li>Unified configuration</li>
+<li>Centralized updates</li>
+<li>Consistent monitoring</li>
+</ul>
+</div>
 
-**Enhanced Security**
-- eBPF safety guarantees
-- No kernel module risks
-- Privilege separation
-- Secure data handling
+<div class="card">
+<h4>Enhanced Security</h4>
+<ul>
+<li>eBPF safety guarantees</li>
+<li>No kernel module risks</li>
+<li>Privilege separation</li>
+<li>Secure data handling</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Use Cases</h3>
 
-**Infrastructure Monitoring**
-- Server performance tracking
-- Capacity planning
-- Resource optimization
-- Alerting and notification
+<div class="card">
+<h4>Infrastructure Monitoring</h4>
+<ul>
+<li>Server performance tracking</li>
+<li>Capacity planning</li>
+<li>Resource optimization</li>
+<li>Alerting and notification</li>
+</ul>
+</div>
 
-**Application Performance Monitoring (APM)**
-- Service performance tracking
-- Dependency mapping
-- Error rate monitoring
-- Latency analysis
+<div class="card">
+<h4>Application Performance Monitoring (APM)</h4>
+<ul>
+<li>Service performance tracking</li>
+<li>Dependency mapping</li>
+<li>Error rate monitoring</li>
+<li>Latency analysis</li>
+</ul>
+</div>
 
-**Security Operations**
-- Runtime security monitoring
-- Compliance data collection
-- Threat detection
-- Incident response
+<div class="card">
+<h4>Security Operations</h4>
+<ul>
+<li>Runtime security monitoring</li>
+<li>Compliance data collection</li>
+<li>Threat detection</li>
+<li>Incident response</li>
+</ul>
+</div>
 
-**Cost Optimization**
-- Resource usage tracking
-- Efficiency monitoring
-- Waste identification
-- Budget planning
+<div class="card">
+<h4>Cost Optimization</h4>
+<ul>
+<li>Resource usage tracking</li>
+<li>Efficiency monitoring</li>
+<li>Waste identification</li>
+<li>Budget planning</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Getting Started</h3>
 
-**Prerequisites**
-- Linux kernel 4.18+ with eBPF support
-- Sufficient privileges for eBPF programs
-- Network connectivity for telemetry export
-- Monitoring infrastructure (Prometheus/OTEL)
+<div class="card">
+<h4>Prerequisites</h4>
+<ul>
+<li>Linux kernel 4.18+ with eBPF support</li>
+<li>Sufficient privileges for eBPF programs</li>
+<li>Network connectivity for telemetry export</li>
+<li>Monitoring infrastructure (Prometheus/OTEL)</li>
+</ul>
+</div>
 
-**Quick Installation**
-1. Download from [Telegen releases](https://github.com/platformbuilds/telegen/releases)
-2. Configure export endpoints
-3. Run as privileged process
-4. Verify metrics collection
+<div class="card">
+<h4>Quick Installation</h4>
+<ol>
+<li>Download from <a href="https://github.com/platformbuilds/telegen/releases">Telegen releases</a></li>
+<li>Configure export endpoints</li>
+<li>Run as privileged process</li>
+<li>Verify metrics collection</li>
+</ol>
+</div>
 
-**Kubernetes Deployment**
-1. Add Helm repository
-2. Customize values.yaml
-3. Deploy DaemonSet
-4. Configure monitoring integrations
+<div class="card">
+<h4>Kubernetes Deployment</h4>
+<ol>
+<li>Add Helm repository</li>
+<li>Customize values.yaml</li>
+<li>Deploy DaemonSet</li>
+<li>Configure monitoring integrations</li>
+</ol>
+</div>
 
-**Configuration Options**
-- Metric collection intervals
-- Export destination settings
-- Resource limits and quotas
-- Security policy configuration
+<div class="card">
+<h4>Configuration Options</h4>
+<ul>
+<li>Metric collection intervals</li>
+<li>Export destination settings</li>
+<li>Resource limits and quotas</li>
+<li>Security policy configuration</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Specialized Variants</h3>
 
-**Telegen-Sonic**
-- SONiC network OS integration
-- Switch and router monitoring
-- Network fabric observability
-- ERSPAN/port-mirroring support
+<div class="card">
+<h4>Telegen-Sonic</h4>
+<ul>
+<li>SONiC network OS integration</li>
+<li>Switch and router monitoring</li>
+<li>Network fabric observability</li>
+<li>ERSPAN/port-mirroring support</li>
+</ul>
+</div>
 
-**Future Variants**
-- Windows server support
-- Cloud-specific optimizations
-- Edge computing editions
-- Embedded system versions
+<div class="card">
+<h4>Future Variants</h4>
+<ul>
+<li>Windows server support</li>
+<li>Cloud-specific optimizations</li>
+<li>Edge computing editions</li>
+<li>Embedded system versions</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Community and Development</h3>
 
-**Open Source License**
-- Apache 2.0 licensing
-- Community contributions welcome
-- Transparent development process
-- Public roadmap and planning
+<div class="card">
+<h4>Open Source License</h4>
+<ul>
+<li>Apache 2.0 licensing</li>
+<li>Community contributions welcome</li>
+<li>Transparent development process</li>
+<li>Public roadmap and planning</li>
+</ul>
+</div>
 
-**Support Channels**
-- GitHub issues and discussions
-- Community forums
-- Documentation wiki
-- Best practices sharing
-
-[View on GitHub](https://github.com/platformbuilds/telegen) | [Documentation](https://github.com/platformbuilds/telegen/wiki) | [Helm Charts](https://github.com/platformbuilds/telegen/tree/main/charts)
+<div class="card">
+<h4>Support Channels</h4>
+<ul>
+<li>GitHub issues and discussions</li>
+<li>Community forums</li>
+<li>Documentation wiki</li>
+<li>Best practices sharing</li>
+</ul>
+<p><a href="https://github.com/platformbuilds/telegen">View on GitHub</a> | <a href="https://github.com/platformbuilds/telegen/wiki">Documentation</a> | <a href="https://github.com/platformbuilds/telegen/tree/main/charts">Helm Charts</a></p>
+</div>
 </div>
 </div>
 </section>

@@ -18,202 +18,314 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <div class="card">
 <h3>Core Capabilities</h3>
 
-**BGP Service Controller**
-- Native Kubernetes BGP integration
-- Automatic service advertisement
-- Load balancer IP allocation
-- Route health monitoring
+<div class="card">
+<h4>BGP Service Controller</h4>
+<ul>
+<li>Native Kubernetes BGP integration</li>
+<li>Automatic service advertisement</li>
+<li>Load balancer IP allocation</li>
+<li>Route health monitoring</li>
+</ul>
+</div>
 
-**Cross-Domain Connectivity**
-- Bridge Kubernetes and bare metal networks
-- Seamless service discovery across domains
-- Unified networking policies
-- Multi-protocol support
+<div class="card">
+<h4>Cross-Domain Connectivity</h4>
+<ul>
+<li>Bridge Kubernetes and bare metal networks</li>
+<li>Seamless service discovery across domains</li>
+<li>Unified networking policies</li>
+<li>Multi-protocol support</li>
+</ul>
+</div>
 
-**Multi-Cluster Networking**
-- Cluster federation support
-- Service mesh integration
-- Global load balancing
-- Disaster recovery automation
+<div class="card">
+<h4>Multi-Cluster Networking</h4>
+<ul>
+<li>Cluster federation support</li>
+<li>Service mesh integration</li>
+<li>Global load balancing</li>
+<li>Disaster recovery automation</li>
+</ul>
+</div>
 
-**High-Performance Routing**
-- Optimized for data center workloads
-- Low-latency path selection
-- Quality of Service (QoS) support
-- Traffic engineering capabilities
+<div class="card">
+<h4>High-Performance Routing</h4>
+<ul>
+<li>Optimized for data center workloads</li>
+<li>Low-latency path selection</li>
+<li>Quality of Service (QoS) support</li>
+<li>Traffic engineering capabilities</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Architecture</h3>
 
-**Control Plane**
-- Kubernetes-native controller
-- BGP speaker implementation
-- Service mesh integration
-- Policy engine
+<div class="card">
+<h4>Control Plane</h4>
+<ul>
+<li>Kubernetes-native controller</li>
+<li>BGP speaker implementation</li>
+<li>Service mesh integration</li>
+<li>Policy engine</li>
+</ul>
+</div>
 
-**Data Plane**
-- High-performance packet forwarding
-- ECMP (Equal Cost Multi-Path) routing
-- Health check integration
-- Metrics and monitoring
+<div class="card">
+<h4>Data Plane</h4>
+<ul>
+<li>High-performance packet forwarding</li>
+<li>ECMP (Equal Cost Multi-Path) routing</li>
+<li>Health check integration</li>
+<li>Metrics and monitoring</li>
+</ul>
+</div>
 
-**Management Plane**
-- Web-based dashboard
-- CLI tools for automation
-- API for programmatic access
-- Integration with GitOps workflows
+<div class="card">
+<h4>Management Plane</h4>
+<ul>
+<li>Web-based dashboard</li>
+<li>CLI tools for automation</li>
+<li>API for programmatic access</li>
+<li>Integration with GitOps workflows</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Key Features</h3>
 
-**Kubernetes Integration**
-- Custom Resource Definitions (CRDs)
-- Operator pattern implementation
-- Helm chart deployment
-- RBAC security model
+<div class="card">
+<h4>Kubernetes Integration</h4>
+<ul>
+<li>Custom Resource Definitions (CRDs)</li>
+<li>Operator pattern implementation</li>
+<li>Helm chart deployment</li>
+<li>RBAC security model</li>
+</ul>
+</div>
 
-**BGP Protocol Support**
-- BGP4 and BGP4+ implementation
-- Route reflector support
-- Graceful restart capabilities
-- Advanced path attributes
+<div class="card">
+<h4>BGP Protocol Support</h4>
+<ul>
+<li>BGP4 and BGP4+ implementation</li>
+<li>Route reflector support</li>
+<li>Graceful restart capabilities</li>
+<li>Advanced path attributes</li>
+</ul>
+</div>
 
-**Network Policies**
-- Kubernetes NetworkPolicy enforcement
-- Calico and Cilium integration
-- Microsegmentation support
-- Zero-trust networking
+<div class="card">
+<h4>Network Policies</h4>
+<ul>
+<li>Kubernetes NetworkPolicy enforcement</li>
+<li>Calico and Cilium integration</li>
+<li>Microsegmentation support</li>
+<li>Zero-trust networking</li>
+</ul>
+</div>
 
-**Observability**
-- Prometheus metrics export
-- Distributed tracing support
-- Real-time network topology
-- Performance analytics
+<div class="card">
+<h4>Observability</h4>
+<ul>
+<li>Prometheus metrics export</li>
+<li>Distributed tracing support</li>
+<li>Real-time network topology</li>
+<li>Performance analytics</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Use Cases</h3>
 
-**Data Center Modernization**
-- Legacy infrastructure integration
-- Gradual Kubernetes adoption
-- Hybrid cloud connectivity
-- Service migration strategies
+<div class="card">
+<h4>Data Center Modernization</h4>
+<ul>
+<li>Legacy infrastructure integration</li>
+<li>Gradual Kubernetes adoption</li>
+<li>Hybrid cloud connectivity</li>
+<li>Service migration strategies</li>
+</ul>
+</div>
 
-**Edge Computing**
-- Edge-to-core connectivity
-- Distributed application deployment
-- Bandwidth optimization
-- Resilient networking
+<div class="card">
+<h4>Edge Computing</h4>
+<ul>
+<li>Edge-to-core connectivity</li>
+<li>Distributed application deployment</li>
+<li>Bandwidth optimization</li>
+<li>Resilient networking</li>
+</ul>
+</div>
 
-**Service Mesh Enhancement**
-- Istio and Linkerd integration
-- East-west traffic optimization
-- Service discovery enhancement
-- Cross-cluster communication
+<div class="card">
+<h4>Service Mesh Enhancement</h4>
+<ul>
+<li>Istio and Linkerd integration</li>
+<li>East-west traffic optimization</li>
+<li>Service discovery enhancement</li>
+<li>Cross-cluster communication</li>
+</ul>
+</div>
 
-**Network Automation**
-- Infrastructure as Code (IaC)
-- GitOps-driven networking
-- Automated failover
-- Self-healing networks
+<div class="card">
+<h4>Network Automation</h4>
+<ul>
+<li>Infrastructure as Code (IaC)</li>
+<li>GitOps-driven networking</li>
+<li>Automated failover</li>
+<li>Self-healing networks</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Deployment Models</h3>
 
-**Standalone Deployment**
-- Single cluster networking
-- Basic BGP advertisement
-- Simple service discovery
-- Entry-level features
+<div class="card">
+<h4>Standalone Deployment</h4>
+<ul>
+<li>Single cluster networking</li>
+<li>Basic BGP advertisement</li>
+<li>Simple service discovery</li>
+<li>Entry-level features</li>
+</ul>
+</div>
 
-**Multi-Cluster Federation**
-- Cross-cluster service mesh
-- Global load balancing
-- Disaster recovery
-- Advanced traffic management
+<div class="card">
+<h4>Multi-Cluster Federation</h4>
+<ul>
+<li>Cross-cluster service mesh</li>
+<li>Global load balancing</li>
+<li>Disaster recovery</li>
+<li>Advanced traffic management</li>
+</ul>
+</div>
 
-**Hybrid Infrastructure**
-- Kubernetes and bare metal integration
-- Legacy system connectivity
-- Migration assistance
-- Unified management
+<div class="card">
+<h4>Hybrid Infrastructure</h4>
+<ul>
+<li>Kubernetes and bare metal integration</li>
+<li>Legacy system connectivity</li>
+<li>Migration assistance</li>
+<li>Unified management</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Benefits</h3>
 
-**Simplified Operations**
-- Reduced network complexity
-- Automated configuration
-- Self-healing capabilities
-- Centralized management
+<div class="card">
+<h4>Simplified Operations</h4>
+<ul>
+<li>Reduced network complexity</li>
+<li>Automated configuration</li>
+<li>Self-healing capabilities</li>
+<li>Centralized management</li>
+</ul>
+</div>
 
-**Enhanced Performance**
-- Optimized routing decisions
-- Low-latency communication
-- High availability design
-- Scalable architecture
+<div class="card">
+<h4>Enhanced Performance</h4>
+<ul>
+<li>Optimized routing decisions</li>
+<li>Low-latency communication</li>
+<li>High availability design</li>
+<li>Scalable architecture</li>
+</ul>
+</div>
 
-**Cost Efficiency**
-- Open source licensing
-- Reduced vendor dependencies
-- Efficient resource utilization
-- Lower operational overhead
+<div class="card">
+<h4>Cost Efficiency</h4>
+<ul>
+<li>Open source licensing</li>
+<li>Reduced vendor dependencies</li>
+<li>Efficient resource utilization</li>
+<li>Lower operational overhead</li>
+</ul>
+</div>
 
-**Future-Proof Design**
-- Cloud-native architecture
-- Standards-based protocols
-- Extensible framework
-- Community-driven development
+<div class="card">
+<h4>Future-Proof Design</h4>
+<ul>
+<li>Cloud-native architecture</li>
+<li>Standards-based protocols</li>
+<li>Extensible framework</li>
+<li>Community-driven development</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Getting Started</h3>
 
-**Prerequisites**
-- Kubernetes cluster (1.20+)
-- BGP-capable network infrastructure
-- Basic understanding of Kubernetes networking
-- Administrative access to network devices
+<div class="card">
+<h4>Prerequisites</h4>
+<ul>
+<li>Kubernetes cluster (1.20+)</li>
+<li>BGP-capable network infrastructure</li>
+<li>Basic understanding of Kubernetes networking</li>
+<li>Administrative access to network devices</li>
+</ul>
+</div>
 
-**Installation Steps**
-1. Clone the [Cosmolet repository](https://github.com/platformbuilds/cosmolet)
-2. Review the deployment documentation
-3. Configure BGP peering relationships
-4. Deploy using Helm or kubectl
-5. Verify connectivity and routing
+<div class="card">
+<h4>Installation Steps</h4>
+<ol>
+<li>Clone the [Cosmolet repository](https://github.com/platformbuilds/cosmolet)</li>
+<li>Review the deployment documentation</li>
+<li>Configure BGP peering relationships</li>
+<li>Deploy using Helm or kubectl</li>
+<li>Verify connectivity and routing</li>
+</ol>
+</div>
 
-**Configuration Examples**
-- Basic service advertisement
-- Multi-cluster setup
-- Policy configuration
-- Integration with service mesh
+<div class="card">
+<h4>Configuration Examples</h4>
+<ul>
+<li>Basic service advertisement</li>
+<li>Multi-cluster setup</li>
+<li>Policy configuration</li>
+<li>Integration with service mesh</li>
+</ul>
+</div>
 </div>
 
 <div class="card">
 <h3>Community and Support</h3>
 
-**Open Source Community**
-- Apache 2.0 license
-- GitHub-based development
-- Community discussions and support
-- Contribution guidelines
+<div class="card">
+<h4>Open Source Community</h4>
+<ul>
+<li>Apache 2.0 license</li>
+<li>GitHub-based development</li>
+<li>Community discussions and support</li>
+<li>Contribution guidelines</li>
+</ul>
+</div>
 
-**Documentation**
-- Comprehensive setup guides
-- API reference documentation
-- Best practices and tutorials
-- Troubleshooting guides
+<div class="card">
+<h4>Documentation</h4>
+<ul>
+<li>Comprehensive setup guides</li>
+<li>API reference documentation</li>
+<li>Best practices and tutorials</li>
+<li>Troubleshooting guides</li>
+</ul>
+</div>
 
-**Integration Support**
-- Kubernetes ecosystem compatibility
-- Service mesh integration guides
-- CI/CD pipeline examples
-- Monitoring and observability setup
+<div class="card">
+<h4>Integration Support</h4>
+<ul>
+<li>Kubernetes ecosystem compatibility</li>
+<li>Service mesh integration guides</li>
+<li>CI/CD pipeline examples</li>
+<li>Monitoring and observability setup</li>
+</ul>
+</div>
 </div>
 
 <p>[View on GitHub](https://github.com/platformbuilds/cosmolet) | [Documentation](https://github.com/platformbuilds/cosmolet/wiki) | [Community](https://github.com/platformbuilds/cosmolet/discussions)</p>
