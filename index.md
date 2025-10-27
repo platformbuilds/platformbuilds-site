@@ -23,9 +23,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         
         <div class="grid grid-3">
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: var(--color-secondary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-brain" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: var(--color-secondary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-brain" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">Sovereign AI Platforms</h3>
                 </div>
@@ -36,9 +36,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: var(--color-success); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-microchip" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: var(--color-success); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-microchip" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">Open Hardware Integration</h3>
                 </div>
@@ -49,9 +49,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: var(--color-tertiary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-chart-line" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: var(--color-tertiary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-chart-line" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">OpenTelemetry Contributions</h3>
                 </div>
@@ -65,9 +65,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         <!-- Additional Projects Row -->
         <div class="grid grid-3" style="margin-top: 2rem;">
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">Cosmolet</h3>
                 </div>
@@ -78,9 +78,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-search" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-search" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">OpenTelemetry Isolation Forest</h3>
                 </div>
@@ -91,9 +91,9 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <div style="width: 48px; height: 48px; background: #6B46C1; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-eye" style="color: var(--text-white); font-size: 20px;"></i>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <div style="width: 3rem; height: 3rem; background: #6B46C1; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-eye" style="color: var(--text-white); font-size: 1.25rem;"></i>
                     </div>
                     <h3 style="margin: 0;">MiradorStack</h3>
                 </div>
