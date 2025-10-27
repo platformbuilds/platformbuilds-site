@@ -58,7 +58,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
                     <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 24px;"></i>
                 </div>
                 <h3>Cosmolet</h3>
-                <p>A Kubernetes controller that automatically advertises service IPs via BGP for bare-metal clusters. Enables seamless integration between Kubernetes services and network infrastructure through FRR integration.</p>
+                <p>L3 Horizontally Scalable WAF + Load Balancer Engine fusing the Bare Metal Networks and Kubernetes CNI, the vendor-agnostic way.</p>
                 <a href="https://github.com/platformbuilds/cosmolet" target="_blank" style="color: var(--color-primary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
                 </a>
