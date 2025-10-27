@@ -14,7 +14,28 @@
                 {% if page.url == nav.url %}
                     {% assign current = 'active' %}
                 {% endif %}
-                {% if nav.url contains 'http' %}
+                {% if nav.children %}
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <a href="{{ nav.url | relative_url }}" 
+                           class="{% if current %}active{% endif %} dropdown-toggle">
+                            {{ nav.name }}
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            {% for child in nav.children %}
+                                {% assign child_current = nil %}
+                                {% if page.url == child.url %}
+                                    {% assign child_current = 'active' %}
+                                {% endif %}
+                                <a href="{{ child.url | relative_url }}" 
+                                   class="{% if child_current %}active{% endif %}">
+                                    {{ child.name }}
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% elsif nav.url contains 'http' %}
                     <a href="{{ nav.url }}" 
                        class="{% if current %}active{% endif %}"
                        target="_blank" rel="noopener">
@@ -57,7 +78,28 @@
                 {% if page.url == nav.url %}
                     {% assign current = 'active' %}
                 {% endif %}
-                {% if nav.url contains 'http' %}
+                {% if nav.children %}
+                    <!-- Mobile Dropdown -->
+                    <div class="mobile-dropdown">
+                        <a href="{{ nav.url | relative_url }}" 
+                           class="{% if current %}active{% endif %} mobile-dropdown-toggle">
+                            {{ nav.name }}
+                            <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
+                        </a>
+                        <div class="mobile-dropdown-menu">
+                            {% for child in nav.children %}
+                                {% assign child_current = nil %}
+                                {% if page.url == child.url %}
+                                    {% assign child_current = 'active' %}
+                                {% endif %}
+                                <a href="{{ child.url | relative_url }}" 
+                                   class="{% if child_current %}active{% endif %}">
+                                    {{ child.name }}
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% elsif nav.url contains 'http' %}
                     <a href="{{ nav.url }}" 
                        class="{% if current %}active{% endif %}"
                        target="_blank" rel="noopener">

@@ -159,6 +159,43 @@ function initMobileMenu() {
             });
         });
         
+        // Handle mobile dropdown toggles
+        const mobileDropdownToggles = mobileMenu.querySelectorAll('.mobile-dropdown-toggle');
+        mobileDropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const dropdown = this.parentElement;
+                const menu = dropdown.querySelector('.mobile-dropdown-menu');
+                const icon = this.querySelector('.mobile-dropdown-icon');
+                
+                // Close other open dropdowns
+                const allDropdowns = mobileMenu.querySelectorAll('.mobile-dropdown');
+                allDropdowns.forEach(d => {
+                    if (d !== dropdown) {
+                        d.classList.remove('active');
+                        const otherMenu = d.querySelector('.mobile-dropdown-menu');
+                        const otherIcon = d.querySelector('.mobile-dropdown-icon');
+                        if (otherMenu) otherMenu.style.display = 'none';
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current dropdown
+                const isActive = dropdown.classList.contains('active');
+                if (isActive) {
+                    dropdown.classList.remove('active');
+                    menu.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    dropdown.classList.add('active');
+                    menu.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
             if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {

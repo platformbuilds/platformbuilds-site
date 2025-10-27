@@ -56,7 +56,18 @@ navigation:
   - name: Products
     url: /products/
   - name: Projects
-    url: https://github.com/platformbuilds
+    url: /projects/
+    children:
+      - name: Cosmolet
+        url: /services/cosmolet/
+      - name: MiradorStack
+        url: /services/miradorstack/
+      - name: Platform Engineering
+        url: /services/platform-engineering/
+      - name: Site Reliability Engineering
+        url: /services/site-reliability-engineering/
+      - name: Telegen
+        url: /services/telegen/
   - name: Community
     url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog
