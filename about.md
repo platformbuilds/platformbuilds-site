@@ -3,6 +3,7 @@ layout: page
 title: "About Platformbuilds"
 subtitle: "We are platform engineering experts passionate about building scalable, reliable infrastructure that empowers development teams."
 hero: true
+permalink: /about/
 ---
 
 <section class="section">
