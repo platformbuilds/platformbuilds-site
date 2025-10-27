@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Building Privacy-First Observability: Telegen's One Agent Approach"
+title: "Implementing SRE Error Budgets: A Comprehensive Guide"
 date: 2024-10-15
-categories: [Observability, Telegen, eBPF]
-tags: [telegen, observability, ebpf, monitoring, privacy-first, agent-consolidation]
+categories: [SRE, Reliability, Error Budgets]
+tags: [sre, error-budget, reliability, slo, monitoring, incident-response]
 author: "PlatformBuilds Team"
-read_time: 8
-excerpt: "Learn how Telegen revolutionizes server monitoring by replacing multiple agents with one eBPF-powered solution."
+read_time: 15
+excerpt: "Learn how to implement error budgets effectively in your SRE practice to balance innovation with reliability."
 ---
 
 The proliferation of monitoring agents on modern Linux servers has become a significant problem. Each monitoring tool typically requires its own agent: Prometheus exporters, APM agents, security monitors, log collectors, and more. This leads to resource conflicts, security concerns, and operational complexity.

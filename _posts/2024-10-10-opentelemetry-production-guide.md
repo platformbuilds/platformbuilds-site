@@ -6,7 +6,7 @@ categories: [Observability, Monitoring, MiradorStack]
 tags: [opentelemetry, observability, tracing, metrics, logging, miradorstack, privacy-first, airgapped]
 author: "PlatformBuilds Team"
 read_time: 15
-excerpt: "Learn how to implement OpenTelemetry in production environments with MiradorStack
+excerpt: "Learn how to implement OpenTelemetry in production environments with MiradorStack"
 ---
 
 OpenTelemetry has emerged as the de facto standard for observability, providing a vendor-neutral way to instrument, generate, collect, and export telemetry data. At PlatformBuilds, we've built **MiradorStack** - a next-generation observability platform that deeply integrates with OpenTelemetry to provide privacy-first, airgapped observability for regulated industries.
