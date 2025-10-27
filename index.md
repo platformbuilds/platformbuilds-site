@@ -14,17 +14,6 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             <p style="font-size: var(--font-size-lg); max-width: 700px; margin: 0 auto;">
                 We build sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations. Our platform engineering approach empowers AI capabilities with complete sovereignty.
             </p>
-            
-            <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); padding: 1.5rem; margin: 2rem auto; max-width: 500px; font-family: 'Courier New', monospace; font-size: var(--font-size-sm); text-align: left;">
-                <pre style="margin: 0; white-space: pre-wrap; color: var(--text-primary);"><code>apiVersion: platformbuilds.org/v1
-kind: SovereignAIPlatform
-metadata:
-  name: population-scale-ai
-spec:
-  scale: population
-  sovereignty: complete
-  hardware: open-compute</code></pre>
-            </div>
         </div>
         
         <div class="grid grid-3">
