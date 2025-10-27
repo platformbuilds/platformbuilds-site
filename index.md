@@ -23,10 +23,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         
         <div class="grid grid-3">
             <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-secondary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-brain" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--color-secondary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-brain" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">Sovereign AI Platforms</h3>
                 </div>
-                <h3>Sovereign AI Platforms</h3>
                 <p>Population-scale AI platforms with complete data sovereignty. Built on open hardware foundations including Open Compute and SONiC networking for maximum control and transparency.</p>
                 <a href="/projects/platform-engineering/" style="color: var(--color-secondary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     Learn More <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
@@ -34,10 +36,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-success); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-microchip" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--color-success); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-microchip" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">Open Hardware Integration</h3>
                 </div>
-                <h3>Open Hardware Integration</h3>
                 <p>Built on Open Compute Project standards and SONiC networking. We leverage open hardware innovations to create vendor-neutral, scalable AI infrastructure platforms.</p>
                 <a href="https://github.com/platformbuilds" target="_blank" style="color: var(--color-success); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     Explore Projects <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
@@ -45,10 +49,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-tertiary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-chart-line" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--color-tertiary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-chart-line" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">OpenTelemetry Contributions</h3>
                 </div>
-                <h3>OpenTelemetry Contributions</h3>
                 <p>We are active contributors to the OpenTelemetry ecosystem with 2 production-grade plugins. Our AI-powered observability solutions enhance monitoring for population-scale platforms.</p>
                 <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=aarvee11" target="_blank" style="color: var(--color-tertiary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View Contributions <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
@@ -59,10 +65,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
         <!-- Additional Projects Row -->
         <div class="grid grid-3" style="margin-top: 2rem;">
             <div class="card">
-                <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--color-primary); border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-network-wired" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">Cosmolet</h3>
                 </div>
-                <h3>Cosmolet</h3>
                 <p>L3 Horizontally Scalable WAF + Load Balancer Engine fusing the Bare Metal Networks and Kubernetes CNI, the vendor-agnostic way.</p>
                 <a href="https://github.com/platformbuilds/cosmolet" target="_blank" style="color: var(--color-primary); font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
@@ -70,10 +78,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="width: 64px; height: 64px; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-search" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: #FF6B35; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-search" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">OpenTelemetry Isolation Forest</h3>
                 </div>
-                <h3>OpenTelemetry Isolation Forest</h3>
                 <p>Contribution to the OpenTelemetry Collector, adding a custom processor for anomaly detection using Isolation Forest on streaming spans for intelligent observability.</p>
                 <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/41707" target="_blank" style="color: #FF6B35; font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
@@ -81,10 +91,12 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
             </div>
             
             <div class="card">
-                <div style="width: 64px; height: 64px; background: #6B46C1; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                    <i class="fas fa-eye" style="color: var(--text-white); font-size: 24px;"></i>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: #6B46C1; border-radius: var(--border-radius-xl); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-eye" style="color: var(--text-white); font-size: 20px;"></i>
+                    </div>
+                    <h3 style="margin: 0;">MiradorStack</h3>
                 </div>
-                <h3>MiradorStack</h3>
                 <p>AI-Powered Impact to Causation RCA & Unified Observability Platform, orchestrating metrics, logs, and traces through a single REST API. Features intelligent routing, cross-engine correlation, and enterprise-grade performance with 10x RAM reduction.</p>
                 <a href="https://github.com/platformbuilds/mirador-core" target="_blank" style="color: #6B46C1; font-weight: var(--font-weight-semibold); text-decoration: none;">
                     View on GitHub <i class="fab fa-github" style="margin-left: 0.25rem;"></i>
