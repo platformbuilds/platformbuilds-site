@@ -2,6 +2,7 @@
 layout: default
 title: "Platforms & Industries"
 description: "Sovereign platform engineering solutions and industry expertise for air-gapped and regulated environments"
+permalink: /products/
 ---
 
 <!-- Platforms & Industries Introduction -->
