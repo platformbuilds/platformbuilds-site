@@ -9,11 +9,14 @@ featured: true
 excerpt: "Next-generation observability stack unifying metrics, logs, and traces with deep OpenTelemetry integration for privacy-first, regulated environments."
 ---
 
-## Your Watchtower for Distributed Systems
+<section class="section">
+<div class="container">
+<h2>Your Watchtower for Distributed Systems</h2>
 
-MiradorStack represents the future of observability - a unified platform that brings together metrics, logs, and traces in a privacy-first architecture designed for regulated industries. Built with deep OpenTelemetry integration and airgapped deployment capabilities.
+<p>MiradorStack represents the future of observability - a unified platform that brings together metrics, logs, and traces in a privacy-first architecture designed for regulated industries. Built with deep OpenTelemetry integration and airgapped deployment capabilities.</p>
 
-### Core Observability Components
+<div class="card">
+<h3>Core Observability Components</h3>
 
 **MiradorStack Platform**
 - Unified telemetry collection and processing
@@ -38,8 +41,10 @@ MiradorStack represents the future of observability - a unified platform that br
 - ERSPAN and port-mirroring integration
 - BGP route monitoring and analysis
 - High-performance packet processing with DPDK
+</div>
 
-### What We Deliver
+<div class="card">
+<h3>What We Deliver</h3>
 
 **Complete Observability Stack**
 - MiradorStack deployment and configuration
@@ -58,16 +63,20 @@ MiradorStack represents the future of observability - a unified platform that br
 - Automated root cause analysis
 - Predictive alerting and forecasting
 - Custom metric correlation and analysis
+</div>
 
-### Key Benefits
+<div class="card">
+<h3>Key Benefits</h3>
 
 - **Unified Telemetry**: Single pane of glass for metrics, logs, and traces
 - **Privacy Compliance**: Built for regulated industries with strict data requirements
 - **Reduced Complexity**: One agent replaces multiple monitoring solutions
 - **AI-Powered Insights**: Machine learning for anomaly detection and RCA
 - **Cost Efficiency**: Optimized resource usage and reduced operational overhead
+</div>
 
-### SRE Maturity Assessment
+<div class="card">
+<h3>SRE Maturity Assessment</h3>
 
 We help organizations progress through SRE maturity levels:
 
@@ -76,7 +85,7 @@ We help organizations progress through SRE maturity levels:
 - Limited monitoring and alerting
 - No formal incident response
 
-**Level 2: Basic SRE Practices**  
+**Level 2: Basic SRE Practices**
 - Initial SLO definition
 - Structured incident response
 - Basic automation
@@ -90,8 +99,10 @@ We help organizations progress through SRE maturity levels:
 - Predictive capacity planning
 - Advanced reliability patterns
 - Organization-wide SRE culture
+</div>
 
-### Technology Stack
+<div class="card">
+<h3>Technology Stack</h3>
 
 **Core Components**
 - **Go**: High-performance backend services
@@ -102,7 +113,7 @@ We help organizations progress through SRE maturity levels:
 **Integration Ecosystem**
 - **Grafana**: Rich visualization and dashboarding
 - **Prometheus**: Time-series metrics storage
-- **Jaeger**: Distributed tracing analysis  
+- **Jaeger**: Distributed tracing analysis
 - **Custom APIs**: RESTful interfaces for integration
 
 **Advanced Features**
@@ -110,8 +121,10 @@ We help organizations progress through SRE maturity levels:
 - **Network Monitoring**: SONiC integration for network observability
 - **High Performance**: DPDK for packet processing
 - **Security**: End-to-end encryption and access control
+</div>
 
-### Training and Development
+<div class="card">
+<h3>Training and Development</h3>
 
 **SRE Fundamentals Course**
 - Introduction to SRE principles
@@ -124,17 +137,21 @@ We help organizations progress through SRE maturity levels:
 - Performance optimization techniques
 - Capacity planning methodologies
 - Leadership and communication skills
+</div>
 
-### Success Metrics
+<div class="card">
+<h3>Success Metrics</h3>
 
 Organizations typically see these improvements after SRE implementation:
 - 99.9%+ service availability
 - 70% reduction in mean time to recovery
-- 80% reduction in manual operational tasks  
+- 80% reduction in manual operational tasks
 - 90% reduction in repeat incidents
 - 50% improvement in deployment confidence
+</div>
 
-### Open Source Advantage
+<div class="card">
+<h3>Open Source Advantage</h3>
 
 All our observability solutions are open source under Apache 2.0 license:
 
@@ -142,8 +159,10 @@ All our observability solutions are open source under Apache 2.0 license:
 - **Vendor Neutral**: No lock-in, community-driven development
 - **Customizable**: Modify and extend to meet specific requirements
 - **Cost Effective**: No licensing fees, pay only for infrastructure
+</div>
 
-### Getting Started
+<div class="card">
+<h3>Getting Started</h3>
 
 Explore our observability stack:
 
@@ -153,3 +172,6 @@ Explore our observability stack:
 4. **Browse [All Projects](https://github.com/platformbuilds)**: Complete platform ecosystem
 
 Join our community and contribute to the future of privacy-first observability!
+</div>
+</div>
+</section>

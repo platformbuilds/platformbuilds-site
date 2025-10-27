@@ -9,11 +9,14 @@ featured: true
 excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prometheus/OTLP export. Avoid the hustle of deploying multiple agents to collect various telemetry from a Linux Server."
 ---
 
-## One Agent, Many Telemetry Signals
+<section class="section">
+<div class="container">
+<h2>One Agent, Many Telemetry Signals</h2>
 
-Telegen is a revolutionary host-level eBPF observability agent that eliminates the need for multiple monitoring agents. With Prometheus and OTLP export capabilities, it provides comprehensive telemetry collection from Linux servers with minimal overhead.
+<p>Telegen is a revolutionary host-level eBPF observability agent that eliminates the need for multiple monitoring agents. With Prometheus and OTLP export capabilities, it provides comprehensive telemetry collection from Linux servers with minimal overhead.</p>
 
-### Core Philosophy
+<div class="card">
+<h3>Core Philosophy</h3>
 
 **Agent Consolidation**
 - Replace multiple monitoring agents with one
@@ -32,8 +35,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - OpenTelemetry Protocol (OTLP) support
 - Industry-standard formats
 - Vendor-neutral telemetry
+</div>
 
-### Key Features
+<div class="card">
+<h3>Key Features</h3>
 
 **Comprehensive Telemetry**
 - System metrics (CPU, memory, disk, network)
@@ -58,8 +63,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - DaemonSet configuration
 - Auto-discovery and scaling
 - GitOps-friendly
+</div>
 
-### Architecture
+<div class="card">
+<h3>Architecture</h3>
 
 **eBPF Programs**
 - System call tracing
@@ -78,8 +85,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - OTLP gRPC client
 - HTTP/JSON endpoints
 - Custom plugin support
+</div>
 
-### Telemetry Categories
+<div class="card">
+<h3>Telemetry Categories</h3>
 
 **System Performance**
 - CPU utilization and load
@@ -104,8 +113,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Protocol distribution
 - Connection state tracking
 - Bandwidth utilization
+</div>
 
-### Deployment Options
+<div class="card">
+<h3>Deployment Options</h3>
 
 **Kubernetes DaemonSet**
 - Automatic node coverage
@@ -124,8 +135,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Privileged execution mode
 - Volume mounting for access
 - Environment-based configuration
+</div>
 
-### Integration Ecosystem
+<div class="card">
+<h3>Integration Ecosystem</h3>
 
 **Prometheus Stack**
 - Native Prometheus metrics
@@ -144,8 +157,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - New Relic integration
 - Splunk compatibility
 - Custom webhook support
+</div>
 
-### Benefits
+<div class="card">
+<h3>Benefits</h3>
 
 **Cost Reduction**
 - Eliminate multiple agent licenses
@@ -170,8 +185,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - No kernel module risks
 - Privilege separation
 - Secure data handling
+</div>
 
-### Use Cases
+<div class="card">
+<h3>Use Cases</h3>
 
 **Infrastructure Monitoring**
 - Server performance tracking
@@ -196,8 +213,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Efficiency monitoring
 - Waste identification
 - Budget planning
+</div>
 
-### Getting Started
+<div class="card">
+<h3>Getting Started</h3>
 
 **Prerequisites**
 - Linux kernel 4.18+ with eBPF support
@@ -222,8 +241,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Export destination settings
 - Resource limits and quotas
 - Security policy configuration
+</div>
 
-### Specialized Variants
+<div class="card">
+<h3>Specialized Variants</h3>
 
 **Telegen-Sonic**
 - SONiC network OS integration
@@ -236,8 +257,10 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Cloud-specific optimizations
 - Edge computing editions
 - Embedded system versions
+</div>
 
-### Community and Development
+<div class="card">
+<h3>Community and Development</h3>
 
 **Open Source License**
 - Apache 2.0 licensing
@@ -252,3 +275,6 @@ Telegen is a revolutionary host-level eBPF observability agent that eliminates t
 - Best practices sharing
 
 [View on GitHub](https://github.com/platformbuilds/telegen) | [Documentation](https://github.com/platformbuilds/telegen/wiki) | [Helm Charts](https://github.com/platformbuilds/telegen/tree/main/charts)
+</div>
+</div>
+</section>

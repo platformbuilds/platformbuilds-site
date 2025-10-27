@@ -9,11 +9,14 @@ featured: true
 excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking."
 ---
 
-## Network Fusion Layer for Modern Infrastructure
+<section class="section">
+<div class="container">
+<h2>Network Fusion Layer for Modern Infrastructure</h2>
 
-Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap between Kubernetes and bare metal networks. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers.
+<p>Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap between Kubernetes and bare metal networks. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers.</p>
 
-### Core Capabilities
+<div class="card">
+<h3>Core Capabilities</h3>
 
 **BGP Service Controller**
 - Native Kubernetes BGP integration
@@ -38,8 +41,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Low-latency path selection
 - Quality of Service (QoS) support
 - Traffic engineering capabilities
+</div>
 
-### Architecture
+<div class="card">
+<h3>Architecture</h3>
 
 **Control Plane**
 - Kubernetes-native controller
@@ -58,8 +63,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - CLI tools for automation
 - API for programmatic access
 - Integration with GitOps workflows
+</div>
 
-### Key Features
+<div class="card">
+<h3>Key Features</h3>
 
 **Kubernetes Integration**
 - Custom Resource Definitions (CRDs)
@@ -84,8 +91,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Distributed tracing support
 - Real-time network topology
 - Performance analytics
+</div>
 
-### Use Cases
+<div class="card">
+<h3>Use Cases</h3>
 
 **Data Center Modernization**
 - Legacy infrastructure integration
@@ -110,8 +119,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - GitOps-driven networking
 - Automated failover
 - Self-healing networks
+</div>
 
-### Deployment Models
+<div class="card">
+<h3>Deployment Models</h3>
 
 **Standalone Deployment**
 - Single cluster networking
@@ -130,8 +141,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Legacy system connectivity
 - Migration assistance
 - Unified management
+</div>
 
-### Benefits
+<div class="card">
+<h3>Benefits</h3>
 
 **Simplified Operations**
 - Reduced network complexity
@@ -156,8 +169,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Standards-based protocols
 - Extensible framework
 - Community-driven development
+</div>
 
-### Getting Started
+<div class="card">
+<h3>Getting Started</h3>
 
 **Prerequisites**
 - Kubernetes cluster (1.20+)
@@ -177,8 +192,10 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Multi-cluster setup
 - Policy configuration
 - Integration with service mesh
+</div>
 
-### Community and Support
+<div class="card">
+<h3>Community and Support</h3>
 
 **Open Source Community**
 - Apache 2.0 license
@@ -197,5 +214,8 @@ Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap b
 - Service mesh integration guides
 - CI/CD pipeline examples
 - Monitoring and observability setup
+</div>
 
-[View on GitHub](https://github.com/platformbuilds/cosmolet) | [Documentation](https://github.com/platformbuilds/cosmolet/wiki) | [Community](https://github.com/platformbuilds/cosmolet/discussions)
+<p>[View on GitHub](https://github.com/platformbuilds/cosmolet) | [Documentation](https://github.com/platformbuilds/cosmolet/wiki) | [Community](https://github.com/platformbuilds/cosmolet/discussions)</p>
+</div>
+</section>

@@ -9,11 +9,14 @@ featured: true
 excerpt: "Building sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations including Open Compute and SONiC networking."
 ---
 
-## Empowering AI Through Platform Engineering
+<section class="section">
+<div class="container">
+<h2>Empowering AI Through Platform Engineering</h2>
 
-We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms at Population Scale**. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.
+<p>We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms at Population Scale**. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
 
-### Sovereign AI Platform Components
+<div class="card">
+<h3>Sovereign AI Platform Components</h3>
 
 **AI Infrastructure at Scale**
 - Population-scale AI platform architecture with vLLM inference optimization
@@ -40,8 +43,10 @@ We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms
 - AI-powered platform optimization
 - Automated scaling based on AI workload patterns
 - Intelligent resource allocation and management
+</div>
 
-### Core Capabilities
+<div class="card">
+<h3>Core Capabilities</h3>
 
 - **Truly Sovereign AI** platforms with complete data and model sovereignty for regulatory compliance
 - **Population Scale** architecture supporting millions of concurrent AI workloads
@@ -50,8 +55,10 @@ We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms
 - **Data-Driven Intelligence** powered by real-time analytics and machine learning
 - **Open Hardware Foundation** built on Open Compute and SONiC networking
 - **Advanced LLM Orchestration** using vLLM and Kubernetes for high-performance inference
+</div>
 
-### Technology Stack
+<div class="card">
+<h3>Technology Stack</h3>
 
 **AI Platform Technologies**
 - **vLLM**: High-performance LLM inference and serving at population scale
@@ -72,8 +79,10 @@ We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms
 - **Go**: High-performance system programming
 - **eBPF**: Kernel-level observability and AI workload monitoring
 - **OpenTelemetry**: Comprehensive AI platform telemetry (2 plugins contributed)
+</div>
 
-### AI Platform Impact
+<div class="card">
+<h3>AI Platform Impact</h3>
 
 Our sovereign AI platforms are transforming critical industries:
 - **Population Scale**: Supporting AI workloads for millions of concurrent users with vLLM optimization
@@ -83,10 +92,10 @@ Our sovereign AI platforms are transforming critical industries:
 - **Open Hardware Leadership**: Driving standardization through OCP and SONiC contributions
 - **OpenTelemetry Innovation**: 2 production plugins enhancing AI observability ecosystem
 - **LLM Democratization**: Open source multi-LLM abstractions for accessible AI infrastructure
+</div>
 
-### Building Sovereign AI Together
-
-Join us in building the future of sovereign AI platforms:
+<div class="card">
+<h3>Building Sovereign AI Together</h3>
 
 **AI Platform Development**
 - **Contribute**: Help build population-scale AI infrastructure
@@ -107,3 +116,6 @@ Join us in building the future of sovereign AI platforms:
 - **Deploy**: Use our open source platforms for your AI initiatives
 
 All projects are Apache 2.0 licensed, ensuring complete freedom for sovereign AI development.
+</div>
+</div>
+</section>
