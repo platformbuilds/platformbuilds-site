@@ -45,6 +45,20 @@ permalink: /contact/
 </div>
 </section>
 
+<section class="section">
+<div class="container">
+<div class="bg-gray-50 border border-gray-200 rounded-lg p-8 my-8 text-center">
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Ready to Build Better Platforms?</h3>
+<p class="text-gray-600 mb-6">
+Schedule a free consultation to discuss your platform engineering needs.
+</p>
+<a href="mailto:hello@platformbuilds.org?subject=Platform Engineering Consultation" class="btn btn-primary">
+Schedule Consultation
+</a>
+</div>
+</div>
+</section>
+
 <section class="section" style="background-color: var(--bg-secondary);">
 <div class="container">
 <h2 style="text-align: center;"><strong>Frequently Asked Questions</strong></h2>
