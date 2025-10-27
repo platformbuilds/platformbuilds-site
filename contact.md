@@ -3,7 +3,9 @@ layout: page
 title: "Contact Us"
 subtitle: "Ready to transform your platform engineering capabilities? Let's discuss how we can help."
 hero: true
+permalink: /contact/
 ---
+
 
 <section class="section">
 <div class="container">
