@@ -44,17 +44,23 @@
     <!-- Custom JavaScript -->
     <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/cookie-consent.js' | relative_url }}"></script>
     
-    <!-- Analytics (Placeholder for future integration) -->
+    <!-- Analytics (GDPR Compliant with Consent) -->
     {% if jekyll.environment == "production" %}
-        <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=483006493"></script>
+        <!-- Google Analytics 4 with Consent Mode -->
         <script>
+          // GDPR Consent Mode - Default to denied
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied'
+          });
           gtag('js', new Date());
           gtag('config', '483006493');
         </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=483006493"></script>
     {% endif %}
 </body>
 </html>
