@@ -19,15 +19,22 @@ function showCookieBanner() {
       bottom: 0;
       left: 0;
       right: 0;
+      max-height: 80vh;
       background: var(--bg-primary);
       border-top: 1px solid var(--border-color);
-      padding: 1.5rem;
       box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
       z-index: 10000;
       font-family: var(--font-family-base);
+      display: flex;
+      flex-direction: column;
     ">
-      <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem;">
-        <div style="flex: 1;">
+      <div style="
+        padding: 1rem 1.5rem 0.5rem;
+        flex: 1;
+        overflow-y: auto;
+        max-height: calc(80vh - 80px);
+      ">
+        <div style="max-width: 1200px; margin: 0 auto;">
           <h3 style="margin: 0 0 0.5rem 0; color: var(--text-primary); font-size: 1.1rem;">🍪 Cookie Preferences</h3>
           <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.4;">
             We use Google Analytics to understand how you use our website and improve your experience.
@@ -35,7 +42,14 @@ function showCookieBanner() {
             <a href="/privacy-policy/" style="color: var(--color-accent); text-decoration: underline;">Learn more</a>
           </p>
         </div>
-        <div style="display: flex; gap: 0.75rem; align-items: center;">
+      </div>
+      <div style="
+        padding: 0.75rem 1.5rem 1.5rem;
+        border-top: 1px solid var(--border-color-light);
+        background: var(--bg-primary);
+        flex-shrink: 0;
+      ">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 0.75rem; align-items: center; justify-content: flex-end;">
           <button id="decline-cookies" style="
             padding: 0.5rem 1rem;
             background: transparent;
@@ -45,6 +59,8 @@ function showCookieBanner() {
             cursor: pointer;
             font-size: 0.9rem;
             transition: var(--transition-fast);
+            flex: 1;
+            max-width: 120px;
           ">Decline</button>
           <button id="accept-cookies" style="
             padding: 0.5rem 1.5rem;
@@ -56,6 +72,8 @@ function showCookieBanner() {
             font-size: 0.9rem;
             font-weight: 500;
             transition: var(--transition-fast);
+            flex: 1;
+            max-width: 160px;
           ">Accept Analytics</button>
         </div>
       </div>
