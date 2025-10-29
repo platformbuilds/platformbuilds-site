@@ -17,6 +17,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 
 <h3>Sovereign AI Platform Components</h3>
 
+<div class="grid grid-3">
 <div class="card">
 <h4>AI Infrastructure at Scale</h4>
 <ul>
@@ -58,6 +59,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <li>Intelligent resource allocation and management</li>
 </ul>
 </div>
+</div>
 
 <div class="card">
 <h3>Core Capabilities</h3>
@@ -73,6 +75,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 
 <h3>Technology Stack</h3>
 
+<div class="grid grid-3">
 <div class="card">
 <h4>AI Platform Technologies</h4>
 <ul>
@@ -104,6 +107,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <li><strong>OpenTelemetry</strong>: Comprehensive AI platform telemetry (2 plugins contributed)</li>
 </ul>
 </div>
+</div>
 
 <div class="card">
 <h3>AI Platform Impact</h3>
@@ -120,6 +124,7 @@ Our sovereign AI platforms are transforming critical industries:
 
 <h3>Building Sovereign AI Together</h3>
 
+<div class="grid grid-3">
 <div class="card">
 <h4>AI Platform Development</h4>
 <ul>
@@ -149,6 +154,7 @@ Our sovereign AI platforms are transforming critical industries:
 <li><strong>Deploy</strong>: Use our open source platforms for your AI initiatives</li>
 </ul>
 <p>All projects are Apache 2.0 licensed, ensuring complete freedom for sovereign AI development.</p>
+</div>
 </div>
 </div>
 </section>
