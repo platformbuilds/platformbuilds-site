@@ -265,18 +265,6 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
     </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);">
-    <div class="container">
-    <h3>Open Source SRE Tools</h3>
-    <p>We leverage and contribute to open source SRE tools:</p>
-    <ul>
-    <li><strong>MiradorStack</strong>: Our AI Driven Unified Observability Platform</li>
-    <li><strong>Telegen</strong>: Universal telemetry agent</li>
-    <li><strong>OpenTelemetry</strong>: Vendor-neutral telemetry standard</li>
-    </ul>
-    </div>
-</section>
-
 <section class="section">
     <div class="container">
     <h3>Getting Started</h3>
