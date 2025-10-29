@@ -149,25 +149,14 @@ permalink: /products/
                 </p>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                     <span class="blog-tag">PCI DSS</span>
-                    <span class="blog-tag">SOX</span>
-                    <span class="blog-tag">Basel III</span>
+                    <span class="blog-tag">Data Protection and Localization</span>
+                    <span class="blog-tag">ISO 27001</span>
                     <span class="blog-tag">Data Sovereignty</span>
+                    <span class="blog-tag">CERT-In</span>
                 </div>
             </div>
 
-            <!-- Government & Public Sector -->
-            <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg" alt="Government of India" class="goi-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> Government & Public Sector of India</h3>
-                <p style="margin-bottom: 1rem;">
-                    Sovereign solutions for Indian government agencies and public sector organizations, ensuring complete data residency and security compliance.
-                </p>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                    <span class="blog-tag">Indian Government</span>
-                    <span class="blog-tag">Data Residency</span>
-                    <span class="blog-tag">Security Clearance</span>
-                    <span class="blog-tag">Sovereign</span>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -185,7 +174,7 @@ permalink: /products/
             <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem;">
                 Schedule a consultation to explore our sovereign platform solutions for your industry requirements.
             </p>
-            <a href="/contact/" class="btn btn-primary" style="background-color: var(--text-white); color: var(--color-primary); border-color: var(--text-white);">
+            <a href="/contact/" class="btn btn-primary btn-header">
                 Schedule Platform Consultation
             </a>
         </div>
