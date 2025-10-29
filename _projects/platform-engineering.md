@@ -9,14 +9,14 @@ featured: true
 excerpt: "Building sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations including Open Compute and SONiC networking."
 ---
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
         <h2>Empowering AI Through Platform Engineering</h2>
         <p>We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms at Population Scale**. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
     </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);>
+<section class="section">
     <div class="container">
     <h3>Sovereign AI Platform Components</h3>
         <div class="grid grid-3">
@@ -62,7 +62,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
     <h3>Core Capabilities</h3>
         <div class="card">
@@ -79,7 +79,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);>
+<section class="section">
     <div class="container">
     <h3>Technology Stack</h3>
         <div class="grid grid-3">
@@ -116,7 +116,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
     <h3>AI Platform Impact</h3>
         <div class="card">
@@ -134,7 +134,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);>
+<section class="section">
     <div class="container">
     <h3>Building Sovereign AI Together</h3>
         <div class="grid grid-3">
