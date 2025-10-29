@@ -25,7 +25,7 @@ permalink: /products/
         <div class="grid grid-1" style="gap: 2rem;">
             <!-- MiradorStack -->
             <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap;"><img src="/logos/miradorstack-logo.svg" alt="Observability" class="miradorstack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> MiradorStack - AI Driven Observability with RCA</h3>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/miradorstack-logo.svg" alt="Observability" class="miradorstack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> MiradorStack - AI Driven Observability with RCA</h3>
                 <p style="margin-bottom: 1rem;">
                     Advanced observability platform with AI-powered Root Cause Analysis. Mira is our observability GenAI Assistant - Truly sovereign.
                 </p>
@@ -51,7 +51,7 @@ permalink: /products/
 
             <!-- CosmoStack -->
             <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap;"><img src="/logos/cosmostack-logo.svg" alt="Private Cloud" class="cosmostack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CosmoStack - AI Powered Private Cloud</h3>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/cosmostack-logo.svg" alt="Private Cloud" class="cosmostack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CosmoStack - AI Powered Private Cloud</h3>
                 <p style="margin-bottom: 1rem;">
                     AI-powered private cloud infrastructure designed for sovereign and air-gapped environments. Truly sovereign and air-gapped ready.
                 </p>
@@ -70,7 +70,7 @@ permalink: /products/
 
             <!-- Cosmolet -->
             <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap;"><img src="/logos/cosmolet-logo.svg" alt="Load Balancer" class="cosmolet-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> Cosmolet - Kubernetes L3 Load Balancer</h3>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/cosmolet-logo.svg" alt="Load Balancer" class="cosmolet-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> Cosmolet - Kubernetes L3 Load Balancer</h3>
                 <p style="margin-bottom: 1rem;">
                     Horizontally scalable Kubernetes L3 Load Balancer using BGP. Fusion of Bare Metal Network & Kubernetes SDN for air-gapped & sensitive data centers. Truly agnostic & sovereign.
                 </p>
@@ -91,7 +91,7 @@ permalink: /products/
 
             <!-- VaultStack -->
             <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap;"><img src="/logos/vaultstack-logo.svg" alt="Key Management" class="vaultstack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> VaultStack - Centralised Key Management</h3>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/vaultstack-logo.svg" alt="Key Management" class="vaultstack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> VaultStack - Centralised Key Management</h3>
                 <p style="margin-bottom: 1rem;">
                     Centralised Key Management System backed by HSM and PCI DSS Ready. Uses REST API with OpenAPI Spec. Truly sovereign.
                 </p>
@@ -113,7 +113,7 @@ permalink: /products/
 
             <!-- CodeStack -->
             <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap;"><img src="/logos/codestack-logo.svg" alt="Code Pipeline" class="codestack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CodeStack - Code → Test → CI/CD</h3>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/codestack-logo.svg" alt="Code Pipeline" class="codestack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CodeStack - Code → Test → CI/CD</h3>
                 <p style="margin-bottom: 1rem;">
                     The vibe coding GenAI platform for air-gapped, regulated and sovereign industries. Code → Test → CI/CD pipeline. Truly sovereign.
                 </p>
