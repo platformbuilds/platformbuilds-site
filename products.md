@@ -170,7 +170,7 @@ permalink: /products/
         </p>
 
         <div class="card" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: var(--text-white); margin-bottom: 2rem;">
-            <h3 style="color: var(--text-white); margin-bottom: 1rem;">Platform Consultation</h3>
+            <h3 style="color: white; margin-bottom: 1rem;">Platform Consultation</h3>
             <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem;">
                 Schedule a consultation to explore our sovereign platform solutions for your industry requirements.
             </p>
