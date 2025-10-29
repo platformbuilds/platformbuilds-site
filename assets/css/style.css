@@ -262,8 +262,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  aspect-ratio: 1;
+  padding: 0.75rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
@@ -277,8 +277,8 @@ a:hover {
 }
 
 .theme-toggle svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
   color: var(--text-secondary);
   transition: var(--transition-fast);
 }
@@ -293,8 +293,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  aspect-ratio: 1;
+  padding: 0.75rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
@@ -310,8 +310,8 @@ a:hover {
 }
 
 .github-link svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
   color: var(--text-secondary);
   transition: var(--transition-fast);
 }
@@ -328,7 +328,7 @@ a:hover {
 }
 
 .logo img {
-  height: 50px;
+  height: 3.125rem;
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
@@ -1132,8 +1132,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    aspect-ratio: 1;
+    padding: 0.5rem;
   }
   
   .nav-links {
@@ -1217,8 +1217,20 @@ footer {
   
   /* Mobile logo scaling */
   .logo img {
-    height: 40px;
+    height: 2.5rem;
     width: auto;
+  }
+  
+  /* Mobile button scaling */
+  .theme-toggle,
+  .github-link {
+    padding: 0.5rem;
+  }
+  
+  .theme-toggle svg,
+  .github-link svg {
+    width: 1em;
+    height: 1em;
   }
   
   /* Mobile typography scaling */
@@ -1249,7 +1261,7 @@ footer {
   
   /* Extra small mobile logo scaling */
   .logo img {
-    height: 35px;
+    height: 2.1875rem;
     width: auto;
   }
 }
