@@ -15,7 +15,6 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 
 <p>Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap between Kubernetes and bare metal networks. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers.</p>
 
-<div class="card">
 <h3>Core Capabilities</h3>
 
 <div class="card">
@@ -57,9 +56,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Traffic engineering capabilities</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Architecture</h3>
 
 <div class="card">
@@ -91,9 +88,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Integration with GitOps workflows</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Key Features</h3>
 
 <div class="card">
@@ -135,9 +130,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Performance analytics</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Use Cases</h3>
 
 <div class="card">
@@ -179,9 +172,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Self-healing networks</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Deployment Models</h3>
 
 <div class="card">
@@ -213,9 +204,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Unified management</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Benefits</h3>
 
 <div class="card">
@@ -257,9 +246,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Community-driven development</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Getting Started</h3>
 
 <div class="card">
@@ -292,9 +279,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>Integration with service mesh</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Community and Support</h3>
 
 <div class="card">
@@ -325,7 +310,6 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <li>CI/CD pipeline examples</li>
 <li>Monitoring and observability setup</li>
 </ul>
-</div>
 </div>
 
 <p>[View on GitHub](https://github.com/platformbuilds/cosmolet) | [Documentation](https://github.com/platformbuilds/cosmolet/wiki) | [Community](https://github.com/platformbuilds/cosmolet/discussions)</p>

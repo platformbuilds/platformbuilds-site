@@ -6,15 +6,15 @@ icon: "fas fa-brain"
 color: "blue"
 order: 1
 featured: true
-excerpt: "Building sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations including Open Compute and SONiC networking."
+excerpt: "Building Sovereign AI platforms at population scale, powered by data-driven insights and open hardware innovations including Open Compute and SONiC networking."
 ---
 
 <section class="section">
-<div class="container">
 <h2>Empowering AI Through Platform Engineering</h2>
 
 <p>We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms at Population Scale**. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
 
+<div class="container">
 <h3>Sovereign AI Platform Components</h3>
 
 <div class="card">
@@ -58,8 +58,9 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <li>Intelligent resource allocation and management</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
+<div class="container">
 <h3>Core Capabilities</h3>
 
 - **Truly Sovereign AI** platforms with complete data and model sovereignty for regulatory compliance
@@ -71,6 +72,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 - **Advanced LLM Orchestration** using vLLM and Kubernetes for high-performance inference
 </div>
 
+<div class="container">
 <h3>Technology Stack</h3>
 
 <div class="card">
@@ -104,8 +106,9 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <li><strong>OpenTelemetry</strong>: Comprehensive AI platform telemetry (2 plugins contributed)</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
+<div class="container">
 <h3>AI Platform Impact</h3>
 
 Our sovereign AI platforms are transforming critical industries:

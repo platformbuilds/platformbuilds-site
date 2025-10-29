@@ -15,7 +15,6 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 
 <p>MiradorStack is a next-generation observability platform that unifies metrics, logs, and traces in a single, coherent system. Built with deep OpenTelemetry integration and designed for privacy-first, regulated environments.</p>
 
-<div class="card">
 <h3>Core Features</h3>
 
 <div class="card">
@@ -57,9 +56,7 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>REST APIs for custom integrations</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Components</h3>
 
 <div class="card">
@@ -101,9 +98,7 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Multi-source telemetry fusion</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Grafana Integration</h3>
 
 <div class="card">
@@ -125,7 +120,6 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Alert correlation views</li>
 </ul>
 </div>
-</div>
 
 <div class="card">
 <h3>Key Benefits</h3>
@@ -137,7 +131,6 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 - **Better Insights**: AI-powered analytics reveal hidden patterns
 </div>
 
-<div class="card">
 <h3>Deployment Options</h3>
 
 <div class="card">
@@ -169,9 +162,7 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Intermittent connectivity support</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Getting Started</h3>
 
 <div class="card">
@@ -203,9 +194,7 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>24/7 technical support</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Community Support</h3>
 
 <div class="card">
@@ -236,7 +225,6 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>User group meetings</li>
 <li>Online forums</li>
 </ul>
-</div>
 </div>
 
 <p>MiradorStack is open source under the Apache 2.0 license, ensuring:</p>

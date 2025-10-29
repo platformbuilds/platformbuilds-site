@@ -15,7 +15,6 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
 
 <p>Site Reliability Engineering (SRE) is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. We provide comprehensive SRE services that ensure your systems are reliable, scalable, and maintainable.</p>
 
-<div class="card">
 <h3>SRE Core Principles</h3>
 
 <div class="card">
@@ -57,9 +56,7 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
 <li>Automated rollback capabilities</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Our SRE Toolkit</h3>
 
 <div class="card">
@@ -101,9 +98,7 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
 <li>Scalability planning</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>SRE Maturity Assessment</h3>
 
 <p>We help organizations progress through SRE maturity levels:</p>
@@ -147,7 +142,6 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
 <li>Continuous reliability improvement</li>
 </ul>
 </div>
-</div>
 
 <div class="card">
 <h3>Key Benefits</h3>
@@ -170,7 +164,6 @@ Organizations typically see these improvements after SRE implementation:
 - **50% improvement in deployment confidence** with automated testing
 </div>
 
-<div class="card">
 <h3>Training and Development</h3>
 
 <div class="card">
@@ -192,9 +185,7 @@ Organizations typically see these improvements after SRE implementation:
 <li>Leadership and communication skills for SRE teams</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Technology Stack</h3>
 
 <div class="card">
@@ -226,9 +217,7 @@ Organizations typically see these improvements after SRE implementation:
 <li><strong>Custom testing frameworks</strong>: Application-specific validation</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Implementation Approach</h3>
 
 <div class="card">
@@ -259,7 +248,6 @@ Organizations typically see these improvements after SRE implementation:
 <li>Continuous improvement processes</li>
 <li>Advanced SRE practice adoption</li>
 </ul>
-</div>
 </div>
 
 <div class="card">

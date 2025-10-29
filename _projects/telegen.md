@@ -15,7 +15,6 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 
 <p>Telegen is a revolutionary host-level eBPF observability agent that eliminates the need for multiple monitoring agents. With Prometheus and OTLP export capabilities, it provides comprehensive telemetry collection from Linux servers with minimal overhead.</p>
 
-<div class="card">
 <h3>Core Philosophy</h3>
 
 <div class="card">
@@ -47,9 +46,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Vendor-neutral telemetry</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Key Features</h3>
 
 <div class="card">
@@ -91,9 +88,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>GitOps-friendly</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Architecture</h3>
 
 <div class="card">
@@ -125,9 +120,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Custom plugin support</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Telemetry Categories</h3>
 
 <div class="card">
@@ -169,9 +162,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Bandwidth utilization</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Deployment Options</h3>
 
 <div class="card">
@@ -203,9 +194,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Environment-based configuration</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Integration Ecosystem</h3>
 
 <div class="card">
@@ -237,9 +226,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Custom webhook support</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Benefits</h3>
 
 <div class="card">
@@ -281,9 +268,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Secure data handling</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Use Cases</h3>
 
 <div class="card">
@@ -325,9 +310,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Budget planning</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Getting Started</h3>
 
 <div class="card">
@@ -369,9 +352,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Security policy configuration</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Specialized Variants</h3>
 
 <div class="card">
@@ -393,9 +374,7 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Embedded system versions</li>
 </ul>
 </div>
-</div>
 
-<div class="card">
 <h3>Community and Development</h3>
 
 <div class="card">
@@ -417,7 +396,6 @@ excerpt: "One Agent, Many signals. Host-level eBPF observability agent with Prom
 <li>Best practices sharing</li>
 </ul>
 <p><a href="https://github.com/platformbuilds/telegen">View on GitHub</a> | <a href="https://github.com/platformbuilds/telegen/wiki">Documentation</a> | <a href="https://github.com/platformbuilds/telegen/tree/main/charts">Helm Charts</a></p>
-</div>
 </div>
 </div>
 </section>
