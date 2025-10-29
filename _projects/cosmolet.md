@@ -12,7 +12,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
         <h2>Network Fusion Layer for Modern Infrastructure</h2>
-        <p>Cosmolet is a BareMetal Kubernetes BGP Service Controller that bridges the gap between Kubernetes and bare metal networks. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers.</p>
+        <p>Cosmolet is a L3 Kubernetes Load Balancer fuuses the network between Kubernetes CNI and bare metal networks. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers, providing a horizontal scaling solution at Network Level</p>
     </div>
 </section>
 
@@ -25,7 +25,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <ul>
                 <li>Native Kubernetes BGP integration</li>
                 <li>Automatic service advertisement</li>
-                <li>Load balancer IP allocation</li>
+                <li>Vendor Agnostic - Chose your network and CNI</li>
                 <li>Route health monitoring</li>
                 </ul>
             </div>
@@ -51,8 +51,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <h4>High-Performance Routing</h4>
                 <ul>
                 <li>Optimized for data center workloads</li>
-                <li>Low-latency path selection</li>
-                <li>Quality of Service (QoS) support</li>
+                <li>Low-latency path selection(BGP tuning)</li>
                 <li>Traffic engineering capabilities</li>
                 </ul>
             </div>
@@ -102,8 +101,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
             <div class="card">
                 <h4>Kubernetes Integration</h4>
                 <ul>
-                <li>Custom Resource Definitions (CRDs)</li>
-                <li>Operator pattern implementation</li>
+                <li>Kube-Native - No CRDs</li>
                 <li>Helm chart deployment</li>
                 <li>RBAC security model</li>
                 </ul>
@@ -111,7 +109,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
             <div class="card">
                 <h4>BGP Protocol Support</h4>
                 <ul>
-                <li>BGP4 and BGP4+ implementation</li>
+                <li>BGP with IPv6 Unnumbered </li>
                 <li>Route reflector support</li>
                 <li>Graceful restart capabilities</li>
                 <li>Advanced path attributes</li>
@@ -121,7 +119,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <h4>Network Policies</h4>
                 <ul>
                 <li>Kubernetes NetworkPolicy enforcement</li>
-                <li>Calico and Cilium integration</li>
+                <li>Any CNI, Any Bare Metal Network Fabric</li>
                 <li>Microsegmentation support</li>
                 <li>Zero-trust networking</li>
                 </ul>
@@ -129,7 +127,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
             <div class="card">
                 <h4>Observability</h4>
                 <ul>
-                <li>Prometheus metrics export</li>
+                <li>OpenTelemetry metrics export</li>
                 <li>Distributed tracing support</li>
                 <li>Real-time network topology</li>
                 <li>Performance analytics</li>
@@ -164,8 +162,7 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
             <div class="card">
                 <h4>Service Mesh Enhancement</h4>
                 <ul>
-                <li>Istio and Linkerd integration</li>
-                <li>East-west traffic optimization</li>
+                <li>Chose any popular Service Mesh</li>
                 <li>Service discovery enhancement</li>
                 <li>Cross-cluster communication</li>
                 </ul>
@@ -200,7 +197,6 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <h4>Multi-Cluster Federation</h4>
                 <ul>
                 <li>Cross-cluster service mesh</li>
-                <li>Global load balancing</li>
                 <li>Disaster recovery</li>
                 <li>Advanced traffic management</li>
                 </ul>
@@ -211,7 +207,6 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <li>Kubernetes and bare metal integration</li>
                 <li>Legacy system connectivity</li>
                 <li>Migration assistance</li>
-                <li>Unified management</li>
                 </ul>
             </div>
         </div>
@@ -278,10 +273,10 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
             <div class="card">
                 <h4>Installation Steps</h4>
                 <ol>
-                <li>Clone the [Cosmolet repository](https://github.com/platformbuilds/cosmolet)</li>
+                <li>Clone the <a href="https://github.com/platformbuilds/cosmolet" target="_blank" rel="noopener">Cosmolet repository</a></li>
                 <li>Review the deployment documentation</li>
                 <li>Configure BGP peering relationships</li>
-                <li>Deploy using Helm or kubectl</li>
+                <li>Deploy using Helm</li>
                 <li>Verify connectivity and routing</li>
                 </ol>
             </div>
@@ -306,9 +301,9 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <h4>Open Source Community</h4>
                 <ul>
                 <li>Apache 2.0 license</li>
-                <li>GitHub-based development</li>
-                <li>Community discussions and support</li>
-                <li>Contribution guidelines</li>
+                <li>CNCF Ready</li>
+                <li>Vendor Agnostic</li>
+                <li>Sovereign Ready</li>
                 </ul>
             </div>
             <div class="card">
@@ -324,9 +319,8 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
                 <h4>Integration Support</h4>
                 <ul>
                 <li>Kubernetes ecosystem compatibility</li>
-                <li>Service mesh integration guides</li>
-                <li>CI/CD pipeline examples</li>
-                <li>Monitoring and observability setup</li>
+                <li>Service mesh integration guidance</li>
+                <li>Monitoring and observability setup using MiradorStack</li>
                 </ul>
             </div>
         </div>
