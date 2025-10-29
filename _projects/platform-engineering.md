@@ -175,8 +175,10 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
                 <li><strong>Connect</strong>: Join discussions on AI platform architecture and design</li>
                 <li><strong>Deploy</strong>: Use our open source platforms for your AI initiatives</li>
                 </ul>
-                <p>All projects are Apache 2.0 licensed, ensuring complete freedom for sovereign AI development.</p>
             </div>
         </div>
     </div>
 </section>
+<div class="container">
+    <p><em>All projects are Apache 2.0 licensed, ensuring complete freedom for sovereign AI development.</em></p>
+</div>
