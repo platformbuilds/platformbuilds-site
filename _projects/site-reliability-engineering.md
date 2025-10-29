@@ -207,7 +207,7 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
     <h3>Technology Stack</h3>
-        <div class="grid grid-3">
+        <div class="grid grid-2">
             <div class="card">
                 <h4>Monitoring & Observability</h4>
                 <ul>
@@ -224,15 +224,6 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
                 <li><strong>Ansible</strong>: Configuration management</li>
                 <li><strong>GitOps</strong>: Declarative deployment</li>
                 <li><strong>Kubernetes</strong>: Container orchestration</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>Testing & Validation</h4>
-                <ul>
-                <li><strong>Chaos Monkey</strong>: Failure injection testing</li>
-                <li><strong>k6</strong>: Load testing and performance validation</li>
-                <li><strong>Gremlin</strong>: Chaos engineering platform</li>
-                <li><strong>Custom testing frameworks</strong>: Application-specific validation</li>
                 </ul>
             </div>
         </div>
@@ -279,10 +270,8 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
     <h3>Open Source SRE Tools</h3>
     <p>We leverage and contribute to open source SRE tools:</p>
     <ul>
-    <li><strong>MiradorStack</strong>: Our unified observability platform</li>
+    <li><strong>MiradorStack</strong>: Our AI Driven Unified Observability Platform</li>
     <li><strong>Telegen</strong>: Universal telemetry agent</li>
-    <li><strong>Prometheus</strong>: Industry-standard metrics collection</li>
-    <li><strong>Grafana</strong>: Visualization and alerting</li>
     <li><strong>OpenTelemetry</strong>: Vendor-neutral telemetry standard</li>
     </ul>
     </div>
@@ -300,7 +289,7 @@ excerpt: "Complete SRE toolkit with intelligent monitoring, automated root cause
     <li><strong>Train Your Team</strong>: Ensure knowledge transfer and SRE culture adoption</li>
     </ol>
         <div class="buttons" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-            <a href="https://github.com/platformbuilds" class="btn btn-primary btn-header" style="margin-right: 10px;">
+            <a href="https://github.com/platformbuilds" class="btn btn-primary btn-header" style="margin-right: 10px; filter: grayscale(100%);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
