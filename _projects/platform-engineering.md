@@ -12,14 +12,14 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
         <h2>Empowering AI Through Platform Engineering</h2>
-        <p>We fundamentally focus on Platform Engineering to build **Sovereign AI Platforms at Population Scale**. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
+        <p>We fundamentally focus on Platform Engineering to build <strong>Sovereign AI Platforms at Population Scale</strong>. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
     <h3>Sovereign AI Platform Components</h3>
-        <div class="grid grid-3">
+        <div class="grid grid-2">
             <div class="card">
                 <h4>AI Infrastructure at Scale</h4>
                 <ul>
@@ -65,16 +65,22 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
     <h3>Core Capabilities</h3>
-        <div class="card">
-        <ul>
-        <li><strong>Truly Sovereign AI</strong> platforms with complete data and model sovereignty for regulatory compliance</li>
-        <li><strong>Population Scale</strong> architecture supporting millions of concurrent AI workloads</li>
-        <li><strong>Regulatory Standards Compliance</strong> designed for sensitive sectors like BFSI, Defense, Healthcare, and Government</li>
-        <li><strong>Multi-OEM AI Silicon Support</strong> with open source abstract layers for vendor independence</li>
-        <li><strong>Data-Driven Intelligence</strong> powered by real-time analytics and machine learning</li>
-        <li><strong>Open Hardware Foundation</strong> built on Open Compute and SONiC networking</li>
-        <li><strong>Advanced LLM Orchestration</strong> using vLLM and Kubernetes for high-performance inference</li>
-        </ul>
+        <div class="grid grid-2">
+            <div class="card">
+                <ul>
+                <li><strong>Truly Sovereign AI</strong> platforms with complete data and model sovereignty for regulatory compliance</li>
+                <li><strong>Population Scale</strong> architecture supporting millions of concurrent AI workloads</li>
+                <li><strong>Regulatory Standards Compliance</strong> designed for sensitive sectors like BFSI, Defense, Healthcare, and Government</li>
+                <li><strong>Multi-OEM AI Silicon Support</strong> with open source abstract layers for vendor independence</li>
+                </ul>
+            </div>
+            <div class="card">
+                <ul>
+                <li><strong>Data-Driven Intelligence</strong> powered by real-time analytics and machine learning</li>
+                <li><strong>Open Hardware Foundation</strong> built on Open Compute and SONiC networking</li>
+                <li><strong>Advanced LLM Orchestration</strong> using vLLM and Kubernetes for high-performance inference</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -119,17 +125,22 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
     <h3>AI Platform Impact</h3>
-        <div class="card">
-            <p>Our sovereign AI platforms are transforming critical industries:</p>
-            <ul>
-            <li><strong>Population Scale</strong>: Supporting AI workloads for millions of concurrent users with vLLM optimization</li>
-            <li><strong>Regulatory Compliance</strong>: Enabling AI adoption in BFSI, Defense, and sensitive sectors</li>
-            <li><strong>True Sovereignty</strong>: Complete data and model control with airgapped deployment capabilities</li>
-            <li><strong>Multi-OEM Freedom</strong>: Vendor-neutral AI silicon support reducing dependency and costs</li>
-            <li><strong>Open Hardware Leadership</strong>: Driving standardization through OCP and SONiC contributions</li>
-            <li><strong>OpenTelemetry Innovation</strong>: 2 production plugins enhancing AI observability ecosystem</li>
-            <li><strong>LLM Democratization</strong>: Open source multi-LLM abstractions for accessible AI infrastructure</li>
-            </ul>
+    <p>Our sovereign AI platforms are transforming critical industries:</p>
+        <div class="grid grid-2">
+            <div class="card">
+                <ul>
+                <li><strong>Population Scale</strong>: Supporting AI workloads for millions of concurrent users with vLLM optimization</li>
+                <li><strong>Regulatory Compliance</strong>: Enabling AI adoption in BFSI, Defense, and sensitive sectors</li>
+                <li><strong>True Sovereignty</strong>: Complete data and model control with airgapped deployment capabilities</li>
+                <li><strong>Multi-OEM Freedom</strong>: Vendor-neutral AI silicon support reducing dependency and costs</li>
+                </ul>
+            </div>
+            <div class="card">
+                <li><strong>Open Hardware Leadership</strong>: Driving standardization through OCP and SONiC contributions</li>
+                <li><strong>OpenTelemetry Innovation</strong>: 2 production plugins enhancing AI observability ecosystem</li>
+                <li><strong>LLM Democratization</strong>: Open source multi-LLM abstractions for accessible AI infrastructure</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
