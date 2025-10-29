@@ -49,25 +49,6 @@ permalink: /products/
                 </div>
             </div>
 
-            <!-- CosmoStack -->
-            <div class="card" style="background-color: var(--bg-secondary);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/cosmostack-logo.svg" alt="Private Cloud" class="cosmostack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CosmoStack - AI Powered Private Cloud</h3>
-                <p style="margin-bottom: 1rem;">
-                    AI-powered private cloud infrastructure designed for sovereign and air-gapped environments. Truly sovereign and air-gapped ready.
-                </p>
-                <p style="margin-top: 1rem; font-size: 0.9em; color: var(--text-secondary);">
-                    This platform is open source but requires deeper understanding. Schedule a free 30-minute engagement session to discuss your requirements.
-                </p>
-                <a href="/contact/" class="btn btn-primary" style="margin-top: 1rem;">
-                    Contact Us
-                </a>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
-                    <span class="blog-tag">AI-Driven</span>
-                    <span class="blog-tag">Air-Gapped Ready</span>
-                    <span class="blog-tag">Sovereign</span>
-                </div>
-            </div>
-
             <!-- Cosmolet -->
             <div class="card" style="background-color: var(--bg-secondary);">
                 <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/cosmolet-logo.svg" alt="Load Balancer" class="cosmolet-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> Cosmolet - Kubernetes L3 Load Balancer</h3>
@@ -86,6 +67,25 @@ permalink: /products/
                     <span class="blog-tag">Air-Gapped</span>
                     <span class="blog-tag">Sovereign</span>
                     <span class="blog-tag">OpenSource/Apache2.0</span>
+                </div>
+            </div>
+
+            <!-- CosmoStack -->
+            <div class="card" style="background-color: var(--bg-secondary);">
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem; white-space: nowrap; display: flex; align-items: center;"><img src="/logos/cosmostack-logo.svg" alt="Private Cloud" class="cosmostack-logo" style="height: 1.2em; vertical-align: middle; margin-right: 0.5rem;"> CosmoStack - AI Powered Private Cloud</h3>
+                <p style="margin-bottom: 1rem;">
+                    AI-powered private cloud infrastructure designed for sovereign and air-gapped environments. Truly sovereign and air-gapped ready.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9em; color: var(--text-secondary);">
+                    This platform is open source but requires deeper understanding. Schedule a free 30-minute engagement session to discuss your requirements.
+                </p>
+                <a href="/contact/" class="btn btn-primary" style="margin-top: 1rem;">
+                    Contact Us
+                </a>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                    <span class="blog-tag">AI-Driven</span>
+                    <span class="blog-tag">Air-Gapped Ready</span>
+                    <span class="blog-tag">Sovereign</span>
                 </div>
             </div>
 
