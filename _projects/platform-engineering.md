@@ -63,14 +63,15 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 
 <div class="card">
 <h3>Core Capabilities</h3>
-
-- **Truly Sovereign AI** platforms with complete data and model sovereignty for regulatory compliance
-- **Population Scale** architecture supporting millions of concurrent AI workloads
-- **Regulatory Standards Compliance** designed for sensitive sectors like BFSI, Defense, Healthcare, and Government
-- **Multi-OEM AI Silicon Support** with open source abstract layers for vendor independence
-- **Data-Driven Intelligence** powered by real-time analytics and machine learning
-- **Open Hardware Foundation** built on Open Compute and SONiC networking
-- **Advanced LLM Orchestration** using vLLM and Kubernetes for high-performance inference
+<ul>
+<li><strong>Truly Sovereign AI</strong> platforms with complete data and model sovereignty for regulatory compliance</li>
+<li><strong>Population Scale</strong> architecture supporting millions of concurrent AI workloads</li>
+<li><strong>Regulatory Standards Compliance</strong> designed for sensitive sectors like BFSI, Defense, Healthcare, and Government</li>
+<li><strong>Multi-OEM AI Silicon Support</strong> with open source abstract layers for vendor independence</li>
+<li><strong>Data-Driven Intelligence</strong> powered by real-time analytics and machine learning</li>
+<li><strong>Open Hardware Foundation</strong> built on Open Compute and SONiC networking</li>
+<li><strong>Advanced LLM Orchestration</strong> using vLLM and Kubernetes for high-performance inference</li>
+</ul>
 </div>
 
 <h3>Technology Stack</h3>
@@ -111,15 +112,16 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 
 <div class="card">
 <h3>AI Platform Impact</h3>
-
-Our sovereign AI platforms are transforming critical industries:
-- **Population Scale**: Supporting AI workloads for millions of concurrent users with vLLM optimization
-- **Regulatory Compliance**: Enabling AI adoption in BFSI, Defense, and sensitive sectors
-- **True Sovereignty**: Complete data and model control with airgapped deployment capabilities
-- **Multi-OEM Freedom**: Vendor-neutral AI silicon support reducing dependency and costs
-- **Open Hardware Leadership**: Driving standardization through OCP and SONiC contributions
-- **OpenTelemetry Innovation**: 2 production plugins enhancing AI observability ecosystem
-- **LLM Democratization**: Open source multi-LLM abstractions for accessible AI infrastructure
+<p>Our sovereign AI platforms are transforming critical industries:</p>
+<ul>
+<li><strong>Population Scale</strong>: Supporting AI workloads for millions of concurrent users with vLLM optimization</li>
+<li><strong>Regulatory Compliance</strong>: Enabling AI adoption in BFSI, Defense, and sensitive sectors</li>
+<li><strong>True Sovereignty</strong>: Complete data and model control with airgapped deployment capabilities</li>
+<li><strong>Multi-OEM Freedom</strong>: Vendor-neutral AI silicon support reducing dependency and costs</li>
+<li><strong>Open Hardware Leadership</strong>: Driving standardization through OCP and SONiC contributions</li>
+<li><strong>OpenTelemetry Innovation</strong>: 2 production plugins enhancing AI observability ecosystem</li>
+<li><strong>LLM Democratization</strong>: Open source multi-LLM abstractions for accessible AI infrastructure</li>
+</ul>
 </div>
 
 <h3>Building Sovereign AI Together</h3>
