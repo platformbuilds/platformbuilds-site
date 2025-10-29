@@ -16,7 +16,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);>
     <div class="container">
     <h3>Sovereign AI Platform Components</h3>
         <div class="grid grid-3">
@@ -79,7 +79,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);>
     <div class="container">
     <h3>Technology Stack</h3>
         <div class="grid grid-3">
@@ -134,7 +134,7 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);>
     <div class="container">
     <h3>Building Sovereign AI Together</h3>
         <div class="grid grid-3">
