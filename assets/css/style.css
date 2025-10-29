@@ -285,6 +285,37 @@ a:hover {
   color: var(--text-primary);
 }
 
+/* GitHub Link Button */
+.github-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: var(--transition-base);
+  text-decoration: none;
+}
+
+.github-link:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--border-color);
+  text-decoration: none;
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.github-link:hover svg {
+  color: var(--text-primary);
+}
+
 /* Logo Styles */
 .logo {
   display: inline-flex;
@@ -665,6 +696,11 @@ nav {
 }
 
 .mobile-nav .theme-toggle {
+  margin: 1rem 0;
+  color: var(--text-primary);
+}
+
+.mobile-nav .github-link {
   margin: 1rem 0;
   color: var(--text-primary);
 }
