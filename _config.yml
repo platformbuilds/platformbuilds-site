@@ -63,10 +63,6 @@ navigation:
         url: /projects/miradorstack/
       - name: Platform Engineering
         url: /projects/platform-engineering/
-      - name: Site Reliability Engineering
-        url: /projects/site-reliability-engineering/
-      - name: Telegen
-        url: /projects/telegen/
   - name: Community
     url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog

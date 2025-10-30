@@ -58,29 +58,6 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <p><a href="/projects/miradorstack/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/miradorstack" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
 </div>
 
-<div class="card">
-<h4>Telegen</h4>
-<p>One agent, many signals. Host-level eBPF observability agent with Prometheus/OTLP export for comprehensive system monitoring.</p>
-<ul>
-<li>eBPF-powered efficiency</li>
-<li>Multi-signal collection</li>
-<li>Prometheus/OTLP export</li>
-<li>Minimal performance overhead</li>
-</ul>
-<p><a href="/projects/telegen/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/telegen" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
-</div>
-
-<div class="card">
-<h4>Site Reliability Engineering</h4>
-<p>Complete SRE toolkit with intelligent monitoring, automated root cause analysis, and chaos engineering practices.</p>
-<ul>
-<li>AI-powered monitoring</li>
-<li>Automated RCA</li>
-<li>Chaos engineering</li>
-<li>Error budget management</li>
-</ul>
-<p><a href="/projects/site-reliability-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
-</div>
 </div>
 
 <div class="card">
@@ -120,7 +97,6 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <h4>Active Development</h4>
 <ul>
 <li>MiradorStack v2.0 - Enhanced AI analytics</li>
-<li>Telegen-SONiC integration</li>
 <li>Cosmolet multi-cluster support</li>
 <li>OpenTelemetry plugin ecosystem</li>
 </ul>
