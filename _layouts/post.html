@@ -67,6 +67,21 @@ layout: default
 .prose td:last-child {
     padding-right: 1.5rem;
 }
+
+/* Alternating sections for markdown --- breaks */
+.alternating-section:nth-child(odd) {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+}
+
+.alternating-section:nth-child(even) {
+    background-color: var(--bg-tertiary);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+}
 </style>
 
 <div class="container mx-auto px-4 py-8 max-w-4xl">
@@ -112,6 +127,31 @@ layout: default
         </div>
         {% endif %}
     </article>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentDiv = document.querySelector('.prose.prose-lg.max-w-none');
+            if (!contentDiv) return;
+            
+            const html = contentDiv.innerHTML;
+            // Split by hr tags, keeping the hr
+            const parts = html.split(/(<hr[^>]*>)/);
+            let newHtml = '<section class="alternating-section">';
+            let inSection = true;
+            
+            for (let part of parts) {
+                if (part.match(/<hr[^>]*>/)) {
+                    // Close current section and start new one
+                    newHtml += '</section><section class="alternating-section">';
+                } else {
+                    newHtml += part;
+                }
+            }
+            newHtml += '</section>';
+            
+            contentDiv.innerHTML = newHtml;
+        });
+    </script>
     
     <!-- Navigation -->
     <div class="mt-12 pt-8 border-t border-gray-200">
