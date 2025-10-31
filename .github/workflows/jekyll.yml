@@ -54,7 +54,7 @@ jobs:
       - name: Test HTML
         run: |
           gem install html-proofer
-          htmlproofer ./_site --disable-external --checks Images,Scripts
+          htmlproofer ./_site --check-links false --check-external false
       - name: Test CSS
         run: |
           npm install -g csslint
@@ -62,7 +62,7 @@ jobs:
       - name: Check links
         run: |
           gem install html-proofer
-          htmlproofer ./_site --disable-external --check-external-hash
+          htmlproofer ./_site --check-external false --check-external-hash
       - name: Setup Pages
         if: github.event_name == 'push'
         id: pages
