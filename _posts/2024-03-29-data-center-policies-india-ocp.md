@@ -163,7 +163,7 @@ India's data center industry is projected to **reach $10B+ by 2027**, driven by 
 
 ### **A. What is OCP?**  
 - **Open-source hardware** for servers, storage, and networking.  
-- **Founded by Meta** (Facebook) to cut costs and improve efficiency. [Read more...](/blog/2025/03/22/opencompute-whitepaper.html)
+- **Founded by Meta** (Facebook) to cut costs and improve efficiency. [Read more...](/blog/2024/03/22/opencompute-whitepaper.html)
 
 ### **B. Benefits for India**  
 1. **Cost Reduction** (30-50% lower vs. OEMs).  
@@ -209,7 +209,7 @@ India's data center industry is projected to **reach $10B+ by 2027**, driven by 
 
 Open Compute Project (OCP) in India is gaining traction as the country continues to expand its data center infrastructure and embrace open-source hardware and software solutions. The OCP, initiated by Facebook (now Meta) in 2011, aims to revolutionize data center design by promoting open standards, collaboration, and efficiency.
 
-[Read More...](/blog/2025/03/21/ocp-relevance-in-india.html)
+[Read More...](/blog/2024/03/21/ocp-relevance-in-india.html)
 
 ---
 
