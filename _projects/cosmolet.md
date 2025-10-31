@@ -11,8 +11,8 @@ excerpt: "A network fusion layer bridging Kubernetes and Bare Metal Networks. Si
 
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
-        <h2>Network Fusion Layer for Modern Infrastructure</h2>
-        <p>Cosmolet is a L3 Kubernetes Load Balancer fusing the network between Kubernetes CNI and bare metal networks truly vendor-agnostic way. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers, providing a horizontal scaling solution at Network Level</p>
+        <h2 style="text-align: center;">Network Fusion Layer for Modern Infrastructure</h2>
+        <p style="text-align: center;">Cosmolet is a L3 Kubernetes Load Balancer fusing the network between Kubernetes CNI and bare metal networks truly vendor-agnostic way. It simplifies cross-domain connectivity, BGP-based routing, and multi-cluster networking for high-performance data centers, providing a horizontal scaling solution at Network Level</p>
         <div class="buttons" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
             <a href="https://github.com/platformbuilds/cosmolet" class="btn btn-primary btn-header" style="margin-right: 10px; filter: grayscale(100%); min-width: 160px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">

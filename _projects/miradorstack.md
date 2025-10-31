@@ -11,9 +11,9 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 
 <section class="section" style="background-color: var(--bg-secondary);">
 <div class="container">
-<h2>Your Watchtower for Distributed Systems</h2>
+<h2 style="text-align: center;">Your Watchtower for Distributed Systems</h2>
 
-<p>MiradorStack is a next-generation observability platform that unifies metrics, logs, and traces in a single, coherent system. Built with deep OpenTelemetry integration and designed for privacy-first, regulated environments.</p>
+<p style="text-align: center;">MiradorStack is a next-generation observability platform that unifies metrics, logs, and traces in a single, coherent system. Built with deep OpenTelemetry integration and designed for privacy-first, regulated environments.</p>
 
 <div class="buttons" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
 <a href="https://github.com/platformbuilds/mirador-core" class="btn btn-primary btn-header" style="margin-right: 10px; filter: grayscale(100%); min-width: 160px;">
@@ -154,11 +154,13 @@ Get Started
 <div class="container">
 <h3>Key Benefits</h3>
 <div class="card">
-- **Reduced Complexity**: Replace multiple monitoring tools with one unified platform
-- **Enhanced Privacy**: Built for regulated industries with strict data requirements
-- **Improved Performance**: Optimized for high-volume telemetry processing
-- **Lower Costs**: Open source licensing reduces operational expenses
-- **Better Insights**: AI-powered analytics reveal hidden patterns
+<ul>
+<li>Reduced Complexity: Replace multiple monitoring tools with one unified platform</li>
+<li>Enhanced Privacy: Built for regulated industries with strict data requirements</li>
+<li>Improved Performance: Optimized for high-volume telemetry processing</li>
+<li>Lower Costs: Open source licensing reduces operational expenses</li>
+<li>Better Insights: AI-powered analytics reveal hidden patterns</li>
+</ul>
 </div>
 </div>
 </section>

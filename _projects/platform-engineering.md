@@ -11,8 +11,8 @@ excerpt: "Building sovereign AI platforms at population scale, powered by data-d
 
 <section class="section" style="background-color: var(--bg-secondary);">
     <div class="container">
-        <h2>Empowering AI Through Platform Engineering</h2>
-        <p>We fundamentally focus on Platform Engineering to build <strong>Sovereign AI Platforms at Population Scale</strong>. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
+        <h2 style="text-align: center;">Empowering AI Through Platform Engineering</h2>
+        <p style="text-align: center;">We fundamentally focus on Platform Engineering to build <strong>Sovereign AI Platforms at Population Scale</strong>. Our data-driven approach empowers AI capabilities while maintaining complete sovereignty and control over your AI infrastructure. We combine cutting-edge open hardware innovations with production-grade software platforms.</p>
     </div>
 </section>
 
