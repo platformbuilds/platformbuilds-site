@@ -86,29 +86,14 @@ pagination:
 
 ## Categories
 
-<table style="margin: 2rem auto; border-collapse: collapse; width: 100%; max-width: 600px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <thead>
-    <tr style="background: var(--bg-secondary);">
-      <th style="padding: 1rem; text-align: left; font-weight: var(--font-weight-semibold); color: var(--color-primary); border-bottom: 1px solid var(--border-color);">Category</th>
-      <th style="padding: 1rem; text-align: center; font-weight: var(--font-weight-semibold); color: var(--color-primary); border-bottom: 1px solid var(--border-color);">Posts</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign categories = site.categories | sort %}
-    {% for category in categories %}
-    <tr style="border-bottom: 1px solid var(--border-light); transition: var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--bg-secondary)'" onmouseout="this.style.backgroundColor='transparent'">
-      <td style="padding: 1rem;">
-        <a href="/blog/category/{{ category[0] | slugify }}/" style="color: var(--link-color); text-decoration: none; font-weight: var(--font-weight-medium); display: block; transition: var(--transition-fast);" onmouseover="this.style.color='var(--link-hover-color)'" onmouseout="this.style.color='var(--link-color)'">
-          {{ category[0] }}
-        </a>
-      </td>
-      <td style="padding: 1rem; text-align: center; color: var(--text-secondary); font-weight: var(--font-weight-medium);">
-        {{ category[1].size }}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 2rem 0;">
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
+  <a href="/blog/category/{{ category[0] | slugify }}/" style="background: var(--bg-secondary); color: var(--color-secondary); padding: 0.5rem 1rem; border-radius: var(--border-radius); text-decoration: none; font-weight: var(--font-weight-medium); transition: var(--transition-fast);">
+    {{ category[0] }} ({{ category[1].size }})
+  </a>
+  {% endfor %}
+</div>
 
 ## Subscribe to Our Newsletter
 
