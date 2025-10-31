@@ -51,10 +51,20 @@ jobs:
         run: bundle exec jekyll build --strict_front_matter
         env:
           JEKYLL_ENV: development
+      - name: Test HTML
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          gem install html-proofer
+          htmlproof ./_site --disable-external --checks-to-ignore links
       - name: Test CSS
         run: |
           npm install -g csslint
           find ./_site -name "*.css" -exec csslint {} \;
+      - name: Check links
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          gem install html-proofer
+          htmlproof ./_site --disable-external --check-external-hash
       - name: Setup Pages
         if: github.event_name == 'push'
         id: pages
