@@ -11,7 +11,7 @@ highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
 # Collections
 collections:
