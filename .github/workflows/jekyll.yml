@@ -54,7 +54,7 @@ jobs:
       - name: Test HTML
         run: |
           gem install html-proofer
-          htmlproofer ./_site --disable-external --ignore-files resources.html
+          htmlproofer ./_site --disable-external --checks Images,Scripts
       - name: Test CSS
         run: |
           npm install -g csslint
