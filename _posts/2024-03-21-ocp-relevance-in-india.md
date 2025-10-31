@@ -28,7 +28,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## **Adoption by Indian Tech Companies**
 <div class="card">
 - Indian IT companies and data center operators are increasingly exploring OCP solutions to reduce costs and improve efficiency.
@@ -54,7 +54,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## **Local Manufacturing and Supply Chain**
 <div class="card">
 - OCP encourages local manufacturing and supply chain development, which aligns with India's "Make in India" initiative.
@@ -80,7 +80,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## **Community and Collaboration**
 <div class="card">
 - OCP fosters a global community of contributors, and Indian companies and engineers can participate in shaping future standards.
@@ -90,7 +90,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## **Challenges**
 <div class="card">
 - **Awareness:** Many Indian enterprises are still unaware of **OCP** and its benefits.
@@ -103,7 +103,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## **Future Outlook**
 <div class="card">
 - As India's data center market grows, OCP adoption is expected to increase, especially among hyperscale operators and cloud service providers.
@@ -123,7 +123,7 @@ Here's how OCP is relevant in the Indian context, particularly for **sovereign A
 </div>
 </div>
 
-<div class="section">
+<div class="section alt">
 ## Opportunity for Startups and Innovators in India
 
 As of now, there are no widely recognized Indian startups exclusively focused on the **Open Compute Project (OCP)** or building OCP-specific hardware and solutions. However, the Indian startup ecosystem is vibrant and increasingly exploring areas like data center innovation, energy efficiency, and open-source hardware, which align with OCP principles. Below are some ways Indian startups are contributing to this space and potential areas where they could engage with OCP:
@@ -195,7 +195,7 @@ While not directly working on OCP, several Indian startups are operating in adja
 
 ---
 
-<div class="section">
+<div class="section alt">
 ## **Potential for Indian Startups in OCP**
 
 Indian startups have a significant opportunity to enter the OCP ecosystem by focusing on:
@@ -241,7 +241,7 @@ Indian startups have a significant opportunity to enter the OCP ecosystem by foc
 
 ---
 
-<div class="section">
+<div class="section alt">
 ## **How Indian Startups Can Engage with OCP**
 
 <div class="card">
