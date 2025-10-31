@@ -9,14 +9,30 @@ featured: true
 excerpt: "A next-generation observability stack unifying metrics, logs, and traces with deep OpenTelemetry integration. Your watchtower for distributed systems."
 ---
 
-<section class="section">
+<section class="section" style="background-color: var(--bg-secondary);">
 <div class="container">
 <h2>Your Watchtower for Distributed Systems</h2>
 
 <p>MiradorStack is a next-generation observability platform that unifies metrics, logs, and traces in a single, coherent system. Built with deep OpenTelemetry integration and designed for privacy-first, regulated environments.</p>
 
-<h3>Core Features</h3>
+<div class="buttons" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+<a href="https://github.com/platformbuilds/mirador-core" class="btn btn-primary btn-header" style="margin-right: 10px; filter: grayscale(100%); min-width: 160px;">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+GitHub
+</a>
+<a href="/contact/" class="btn btn-primary btn-header" style="min-width: 160px;">
+Get Started
+</a>
+</div>
+</div>
+</section>
 
+<section class="section">
+<div class="container">
+<h3>Core Features</h3>
+<div class="grid grid-2">
 <div class="card">
 <h4>Unified Telemetry Platform</h4>
 <ul>
@@ -56,9 +72,14 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>REST APIs for custom integrations</li>
 </ul>
 </div>
+</div>
+</div>
+</section>
 
+<section class="section" style="background-color: var(--bg-secondary);">
+<div class="container">
 <h3>Components</h3>
-
+<div class="grid grid-2">
 <div class="card">
 <h4>Mirador-Core</h4>
 <ul>
@@ -98,9 +119,14 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Multi-source telemetry fusion</li>
 </ul>
 </div>
+</div>
+</div>
+</section>
 
+<section class="section">
+<div class="container">
 <h3>Grafana Integration</h3>
-
+<div class="grid grid-2">
 <div class="card">
 <h4>Native Datasource Plugin</h4>
 <ul>
@@ -120,19 +146,27 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Alert correlation views</li>
 </ul>
 </div>
+</div>
+</div>
+</section>
 
-<div class="card">
+<section class="section" style="background-color: var(--bg-secondary);">
+<div class="container">
 <h3>Key Benefits</h3>
-
+<div class="card">
 - **Reduced Complexity**: Replace multiple monitoring tools with one unified platform
 - **Enhanced Privacy**: Built for regulated industries with strict data requirements
 - **Improved Performance**: Optimized for high-volume telemetry processing
 - **Lower Costs**: Open source licensing reduces operational expenses
 - **Better Insights**: AI-powered analytics reveal hidden patterns
 </div>
+</div>
+</section>
 
+<section class="section">
+<div class="container">
 <h3>Deployment Options</h3>
-
+<div class="grid grid-3">
 <div class="card">
 <h4>Cloud-Native</h4>
 <ul>
@@ -162,9 +196,14 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Intermittent connectivity support</li>
 </ul>
 </div>
+</div>
+</div>
+</section>
 
+<section class="section" style="background-color: var(--bg-secondary);">
+<div class="container">
 <h3>Getting Started</h3>
-
+<div class="grid grid-3">
 <div class="card">
 <h4>Quick Installation</h4>
 <ul>
@@ -194,9 +233,14 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>24/7 technical support</li>
 </ul>
 </div>
+</div>
+</div>
+</section>
 
-<h3>Community Support</h3>
-
+<section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+    <h3>Community and Support</h3>
+<div class="grid grid-3">
 <div class="card">
 <h4>Open Source</h4>
 <ul>
@@ -226,15 +270,20 @@ excerpt: "A next-generation observability stack unifying metrics, logs, and trac
 <li>Online forums</li>
 </ul>
 </div>
-
-<p>MiradorStack is open source under the Apache 2.0 license, ensuring:</p>
-<ul>
-<li><strong>Freedom to use** in commercial and non-commercial projects</strong></li>
-<li><strong>Transparency** with full source code access</strong></li>
-<li><strong>Community-driven** development and roadmap</strong></li>
-<li><strong>No vendor lock-in** with open standards support</strong></li>
-</ul>
-
-<p>[View on GitHub](https://github.com/platformbuilds/miradorstack) | [Documentation](https://github.com/platformbuilds/miradorstack/wiki) | [Community Discussions](https://github.com/platformbuilds/miradorstack/discussions)</p>
+</div>
+<div class="buttons" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+<a href="https://github.com/platformbuilds/mirador-core" class="btn btn-primary btn-header" style="margin-right: 10px; filter: grayscale(100%); min-width: 160px;">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+GitHub
+</a>
+<a href="/contact/" class="btn btn-primary btn-header" style="min-width: 160px;">
+Get Started
+</a>
+</div>
 </div>
 </section>
+<div class="container">
+    <p><em>All projects are Apache 2.0 licensed, ensuring complete freedom for observability innovation.</em></p>
+</div>
