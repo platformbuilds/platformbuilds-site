@@ -7,6 +7,7 @@ tags: [sre, error-budget, reliability, slo, monitoring, incident-response]
 author: "PlatformBuilds Team"
 read_time: 15
 excerpt: "Learn how to implement error budgets effectively in your SRE practice to balance innovation with reliability."
+published: false
 ---
 
 The proliferation of monitoring agents on modern Linux servers has become a significant problem. Each monitoring tool typically requires its own agent: Prometheus exporters, APM agents, security monitors, log collectors, and more. This leads to resource conflicts, security concerns, and operational complexity.
