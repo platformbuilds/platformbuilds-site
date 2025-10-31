@@ -4,7 +4,7 @@ title: "Category: {{ page.title }}"
 subtitle: "Posts in the {{ page.title }} category"
 ---
 
-{% assign category_posts = site.posts | where: "categories", page.title %}
+{% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.title" %}
 
 <div class="grid grid-2" style="margin: 2rem 0;">
 
