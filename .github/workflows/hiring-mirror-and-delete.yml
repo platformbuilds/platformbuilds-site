@@ -10,10 +10,8 @@ permissions:
 
 jobs:
   mirror-and-delete:
-    # Only act on issues marked as hiring/candidate
-    if: |
-      contains(join(github.event.issue.labels.*.name, ','), 'hiring') ||
-      contains(join(github.event.issue.labels.*.name, ','), 'candidate')
+    # Only act on issues created from the website
+    if: ${{ startsWith(github.event.issue.title, 'Hiring Application from website') }}
     runs-on: ubuntu-latest
 
     steps:
@@ -23,13 +21,10 @@ jobs:
       - name: Mirror to private repo and delete public issue
         env:
           GH_TOKEN: ${{ secrets.HIRING_REPO_TOKEN }}
-
           SOURCE_OWNER: platformbuilds
           SOURCE_REPO: platformbuilds.github.io
-
           TARGET_OWNER: platformbuilds
           TARGET_REPO: hiring
-
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
           set -euo pipefail
@@ -52,24 +47,24 @@ jobs:
 
           private_body=$(cat <<EOF
             Application submitted via website → public intake issue → mirrored by GitHub Actions.
-                    
+
             **Original author:** @${author}
             **Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
-                    
+
             ---
             
             ${body}
             EOF
-                      )
-            
-                      create_payload=$(jq -n \
-                        --arg title "$title" \
-                        --arg body "$private_body" \
-                        '{
-                          title: $title,
-                          body: $body,
-                          labels: ["candidate", "source:public-intake"]
-                        }')
+            )
+
+            create_payload=$(jq -n \
+              --arg title "$title" \
+              --arg body "$private_body" \
+              '{
+                title: $title,
+                body: $body,
+                labels: ["candidate", "source:public-intake"]
+              }')
 
           echo "Creating issue in ${TARGET_OWNER}/${TARGET_REPO}…"
 
@@ -83,7 +78,6 @@ jobs:
           private_issue_url=$(echo "$create_resp" | jq -r '.html_url')
           echo "Private issue created at: $private_issue_url"
 
-          # Optional scrub+close before deletion (defence in depth)
           scrubbed_body="Thanks for applying! Your application has been recorded in our internal hiring tracker."
 
           update_payload=$(jq -n \
@@ -102,7 +96,6 @@ jobs:
             "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}" \
             -d "$update_payload"
 
-          # Delete via GraphQL
           echo "Deleting source issue via GraphQL…"
 
           graphql_query=$(jq -n \

@@ -213,7 +213,7 @@ _Italic_
     const issueBody = bodyLines.join('\n');
 
     const timestamp = new Date().toISOString();
-    const title = `Application from website – ${timestamp}`;
+    const title = `Hiring Application from Website – ${timestamp}`;
 
     const params = new URLSearchParams({
       title: title,
