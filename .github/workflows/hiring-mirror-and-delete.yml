@@ -51,25 +51,25 @@ jobs:
           echo "Source node_id: $node_id"
 
           private_body=$(cat <<EOF
-Application submitted via website → public intake issue → mirrored by GitHub Actions.
-
-**Original author:** @${author}
-**Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
-
----
-
-${body}
-EOF
-          )
-
-          create_payload=$(jq -n \
-            --arg title "$title" \
-            --arg body "$private_body" \
-            '{
-              title: $title,
-              body: $body,
-              labels: ["candidate", "source:public-intake"]
-            }')
+            Application submitted via website → public intake issue → mirrored by GitHub Actions.
+                    
+            **Original author:** @${author}
+            **Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
+                    
+            ---
+            
+            ${body}
+            EOF
+                      )
+            
+                      create_payload=$(jq -n \
+                        --arg title "$title" \
+                        --arg body "$private_body" \
+                        '{
+                          title: $title,
+                          body: $body,
+                          labels: ["candidate", "source:public-intake"]
+                        }')
 
           echo "Creating issue in ${TARGET_OWNER}/${TARGET_REPO}…"
 
