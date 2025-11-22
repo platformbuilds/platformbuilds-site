@@ -69,6 +69,51 @@ hero: true
   </div>
 </div>
 
+<h3 style="text-align: center;">Our Org Roles</h3>
+
+<div class="grid grid-2 org-roles-grid" style="margin-bottom: 3rem;">
+  <div class="card">
+    <h4>Business:</h4>
+    <p>Led by our Pre-Sales Strategist, this group shapes how we position AI, platform, and application solutions for customers before delivery begins.</p>
+    <ul>
+      <li>Principal AI Architect</li>
+      <li>Principal Platform Architect</li>
+      <li>Principal Application Architect</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h4>Customer Facing Pod (per customer): </h4>
+    <p>Led by our TPA (Technical Project Architect), this pod-driven group delivers tailored solutions per customer after sales.</p>
+    <ul>
+      <li>AI Solutions Architect</li>
+      <li>Platform Solutions Architect</li>
+      <li>Network Solutions Architect</li>
+      <li>Application Solutions Architect</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h4>Core Engineering:</h4>
+    <p>Led by our Chief Platform Architect, this central group develops the core technologies powering our platforms.</p>
+    <ul>
+      <li>Network Architect</li>
+      <li>Compute & Storage Architect</li>
+      <li>Orchestration Architect</li>
+      <li>AI Architect</li>
+      <li>Application Architect</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h4>Common Skills:</h4>
+    <p>This central group provides essential skills across DevOps, Kubernetes, security, and observability to support all projects.</p>
+    <ul>
+      <li>DevOps & SRE</li>
+      <li>k8s Development & Ops</li>
+      <li>Security Engineering e2e</li>
+      <li>Observability (OpenTelemetry)</li>
+    </ul>
+  </div>
+</div>
+
 <h3 style="text-align: center;">Share Your Thoughts</h3>
 
 <form id="feedbackForm">
