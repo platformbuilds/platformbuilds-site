@@ -106,17 +106,7 @@ jobs:
 
           echo "No existing open applications for @${author}. Proceeding to mirror."
 
-          private_body=$(cat <<EOF
-            Application submitted via website → public intake issue → mirrored by GitHub Actions.
-                    
-            **Original author:** @${author}
-            **Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
-                    
-            ---
-            
-            ${body}
-            EOF
-                      )
+          private_body=$(printf "Application submitted via website → public intake issue → mirrored by GitHub Actions.\n\n**Original author:** @%s\n**Original issue (now deleted):** https://github.com/%s/%s/issues/%s\n\n---\n\n%s" "$author" "$SOURCE_OWNER" "$SOURCE_REPO" "$ISSUE_NUMBER" "$body")
             
                       create_payload=$(jq -n \
                         --arg title "$title" \
