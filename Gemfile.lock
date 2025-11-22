@@ -89,7 +89,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll (~> 4.3.0)
+  jekyll (~> 4.3.3)
   jekyll-paginate-v2
   jekyll-seo-tag
   jekyll-sitemap
@@ -99,4 +99,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.6.6
+   2.3.27

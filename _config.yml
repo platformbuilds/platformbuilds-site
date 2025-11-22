@@ -54,8 +54,6 @@ social:
 navigation:
   - name: Home
     url: /
-  - name: About
-    url: /about/
   - name: Products
     url: /products/
   - name: Projects
@@ -67,6 +65,13 @@ navigation:
         url: /projects/miradorstack/
       - name: Platform Engineering
         url: /projects/platform-engineering/
+  - name: Company
+    url: /about/
+    children:
+      - name: About
+        url: /about/
+      - name: Hiring
+        url: /hiring/
   - name: Community
     url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog

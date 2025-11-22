@@ -442,7 +442,7 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   position: relative;
   z-index: 100;
@@ -770,7 +770,7 @@ nav {
 }
 
 .btn-header {
-  padding: 1rem 3.5rem !important;
+  padding: 0.75rem 2rem !important;
 }
 
 .btn-secondary {

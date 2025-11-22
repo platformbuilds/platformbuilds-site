@@ -1,0 +1,122 @@
+name: Mirror hiring issues to private repo and delete public copy
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  mirror-and-delete:
+    # Only act on issues marked as hiring/candidate
+    if: |
+      contains(join(github.event.issue.labels.*.name, ','), 'hiring') ||
+      contains(join(github.event.issue.labels.*.name, ','), 'candidate')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Mirror to private repo and delete public issue
+        env:
+          GH_TOKEN: ${{ secrets.HIRING_REPO_TOKEN }}
+
+          SOURCE_OWNER: platformbuilds
+          SOURCE_REPO: platformbuilds.github.io
+
+          TARGET_OWNER: platformbuilds
+          TARGET_REPO: hiring
+
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          set -euo pipefail
+
+          echo "Fetching source issue #${ISSUE_NUMBER}…"
+
+          issue_json=$(curl -sSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}")
+
+          title=$(echo "$issue_json" | jq -r '.title')
+          body=$(echo "$issue_json" | jq -r '.body')
+          author=$(echo "$issue_json" | jq -r '.user.login')
+          node_id=$(echo "$issue_json" | jq -r '.node_id')
+
+          echo "Source title: $title"
+          echo "Source author: $author"
+          echo "Source node_id: $node_id"
+
+          private_body=$(cat <<EOF
+Application submitted via website → public intake issue → mirrored by GitHub Actions.
+
+**Original author:** @${author}
+**Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
+
+---
+
+${body}
+EOF
+          )
+
+          create_payload=$(jq -n \
+            --arg title "$title" \
+            --arg body "$private_body" \
+            '{
+              title: $title,
+              body: $body,
+              labels: ["candidate", "source:public-intake"]
+            }')
+
+          echo "Creating issue in ${TARGET_OWNER}/${TARGET_REPO}…"
+
+          create_resp=$(curl -sSL \
+            -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${TARGET_OWNER}/${TARGET_REPO}/issues" \
+            -d "$create_payload")
+
+          private_issue_url=$(echo "$create_resp" | jq -r '.html_url')
+          echo "Private issue created at: $private_issue_url"
+
+          # Optional scrub+close before deletion (defence in depth)
+          scrubbed_body="Thanks for applying! Your application has been recorded in our internal hiring tracker."
+
+          update_payload=$(jq -n \
+            --arg body "$scrubbed_body" \
+            '{
+              body: $body,
+              state: "closed"
+            }')
+
+          echo "Scrubbing and closing source issue before deletion…"
+
+          curl -sSL \
+            -X PATCH \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}" \
+            -d "$update_payload"
+
+          # Delete via GraphQL
+          echo "Deleting source issue via GraphQL…"
+
+          graphql_query=$(jq -n \
+            --arg id "$node_id" \
+            '{ query: "mutation DeleteIssue($id:ID!){ deleteIssue(input:{issueId:$id}){ clientMutationId }}", variables: { id: $id } }')
+
+          delete_resp=$(curl -sSL \
+            -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/graphql \
+            -d "$graphql_query")
+
+          echo "Delete response:"
+          echo "$delete_resp"
+
+          echo "Done: mirrored to private and deleted public issue."

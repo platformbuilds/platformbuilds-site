@@ -149,8 +149,8 @@ function initMobileMenu() {
         mobileMenuButton.addEventListener('touchstart', handleMobileMenuClick);
         mobileMenuButton.addEventListener('click', handleMobileMenuClick);
         
-        // Close menu when clicking on a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
+        // Close menu when clicking on a link (but not dropdown toggles)
+        const mobileLinks = mobileMenu.querySelectorAll('a:not(.mobile-dropdown-toggle)');
         mobileLinks.forEach(link => {
             link.addEventListener('click', function() {
                 mobileMenu.classList.remove('active');
