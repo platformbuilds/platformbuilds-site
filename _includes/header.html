@@ -59,6 +59,12 @@
                 </svg>
             </button>
             
+            <!-- Techie Mode Toggle Button -->
+            <button class="techie-toggle" id="techie-toggle" aria-label="Toggle techie mode">
+                <i class="fas fa-user techie-visitor-icon"></i>
+                <i class="fas fa-code techie-techie-icon" style="display: none;"></i>
+            </button>
+            
             <!-- CTA Button -->
             <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-header">
                 Get Started
@@ -121,6 +127,12 @@
                 <svg class="moon-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                 </svg>
+            </button>
+            
+            <!-- Techie Mode Toggle for Mobile -->
+            <button class="techie-toggle" onclick="document.getElementById('techie-toggle').click()" aria-label="Toggle techie mode">
+                <i class="fas fa-user techie-visitor-icon"></i>
+                <i class="fas fa-code techie-techie-icon" style="display: none;"></i>
             </button>
             
             <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-header">

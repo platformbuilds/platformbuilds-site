@@ -7,9 +7,9 @@ hero: true
 
 <section class="section">
 <div class="container">
-<h3 style="text-align: center; font-style: italic;">At PlatformBuilds, we believe great work starts with understanding what people need to succeed.</h3>
+<h3 style="text-align: center; font-style: italic;">At PlatformBuilds, we believe great work starts with understanding what people need, to grow & succeed together.</h3>
 
-<p style="text-align: center; margin-bottom: 3rem;">We're building our team differently, and your insights will directly shape how we create roles and support our future team members.</p>
+<p style="text-align: center; margin-bottom: 3rem;">We're building our team differently, and your insights will directly shape how we create roles and support our future team members's growth.</p>
 
 <h3 style="text-align: center;">Our Organization Values</h3>
 
@@ -82,7 +82,7 @@ hero: true
     </ul>
   </div>
   <div class="card">
-    <h4>Customer Facing Pod (per customer): </h4>
+    <h4>Customer Oriented Delivery Team (COD): </h4>
     <p>Led by our TPA (Technical Project Architect), this pod-driven group delivers tailored solutions per customer after sales.</p>
     <ul>
       <li>AI Solutions Architect</li>

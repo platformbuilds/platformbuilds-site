@@ -174,7 +174,7 @@ description: "PlatformBuilds focuses on Platform Engineering to build Sovereign 
 <!-- Community & Contributing Section -->
 <section class="section" style="background-color: var(--color-primary); color: var(--text-white); text-align: center;">
     <div class="container">
-        <h2 style="color: var(--text-white); margin-bottom: 1.5rem;">🤝 Join Our Community</h2>
+        <h2 style="color: var(--text-white); margin-bottom: 1.5rem;"><img src="{{ '/logos/community.svg' | relative_url }}" alt="community" style="display: inline; vertical-align: middle; width: 1.5em; height: 1.5em; margin-right: 0.5rem;"> Join Our Community</h2>
         <p style="font-size: var(--font-size-lg); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; color: rgba(255, 255, 255, 0.9);">
             We welcome community contributions! Open issues, submit PRs, or start discussions to collaborate on the future of cloud-native networking and observability.
         </p>

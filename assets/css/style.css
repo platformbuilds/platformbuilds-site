@@ -3,7 +3,7 @@
 /* Local Font Definitions */
 @font-face {
   font-family: 'DM Sans';
-  src: url('../fonts/DMSans_18pt-Regular.woff') format('woff');
+  src: url('/fonts/DMSans_18pt-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,9 +11,25 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
   font-weight: 300 800;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono/JetBrainsMono%5Bwght%5D.ttf') format('truetype-variations');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono/JetBrainsMono-Italic%5Bwght%5D.ttf') format('truetype-variations');
+  font-weight: 100 800;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -137,6 +153,38 @@
 /* Dark mode specific heading adjustments */
 [data-theme="dark"] h2 {
   color: #e0e0e0 !important;
+}
+
+/* Techie Mode Font Override */
+[data-techie="true"] {
+  --font-family-base: 'JetBrains Mono', monospace;
+  --font-family-heading: 'JetBrains Mono', monospace;
+}
+
+/* Techie Mode Typing Animation */
+@keyframes blink-caret {
+  from, to { border-color: currentColor; }
+  50% { border-color: transparent; }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Techie Mode Header Adjustments */
+[data-techie="true"] nav .nav-links {
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+[data-techie="true"] .btn-header {
+  padding: 0.5rem 1.5rem !important;
+  font-size: 1rem;
+}
+
+[data-techie="true"] .logo img {
+  height: 2.5rem;
 }
 
 /* Platform and industry card headings - light and dark friendly */
@@ -287,6 +335,85 @@ a:hover {
   color: var(--text-primary);
 }
 
+/* Techie Mode Toggle Button */
+.techie-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.techie-toggle:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--border-color);
+}
+
+.techie-toggle svg {
+  width: 1.25em;
+  height: 1.25em;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.techie-toggle:hover svg {
+  color: var(--text-primary);
+}
+
+/* Techie toggle icons */
+.techie-toggle i {
+  width: 1.25em;
+  height: 1.25em;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.techie-toggle:hover i {
+  color: var(--text-primary);
+}
+
+/* Dark mode techie icon adjustments */
+[data-theme="dark"] .techie-toggle svg {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .techie-toggle i {
+  color: var(--text-primary);
+}
+
+[data-techie="true"] .techie-toggle {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+[data-techie="true"] .techie-toggle svg {
+  color: var(--text-white);
+}
+
+[data-techie="true"] .techie-toggle i {
+  color: var(--text-white);
+}
+
+/* Dark mode techie button adjustments */
+[data-theme="dark"] [data-techie="true"] .techie-toggle {
+  background: var(--text-white);
+  border-color: var(--text-white);
+}
+
+[data-theme="dark"] [data-techie="true"] .techie-toggle svg {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] [data-techie="true"] .techie-toggle i {
+  color: var(--text-primary);
+}
+
 /* Logo Styles */
 .logo {
   display: inline-flex;
@@ -401,6 +528,21 @@ a:hover {
 
 [data-theme="dark"] .goi-logo {
   filter: brightness(0) invert(1) brightness(0.9);
+}
+
+/* Community icon - ensure it's white */
+img[src*="/logos/community.svg"] {
+  filter: brightness(0) invert(1);
+}
+
+/* Discuss icon - ensure it's white */
+img[src*="/logos/discuss.svg"] {
+  filter: brightness(0) invert(1);
+}
+
+/* Handshake icon - ensure it's white */
+img[src*="/logos/handshake.svg"] {
+  filter: brightness(0) invert(1);
 }
 
 /* Hero title - dark gray in light mode, off-white in dark mode */

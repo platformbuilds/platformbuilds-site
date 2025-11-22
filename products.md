@@ -164,8 +164,8 @@ permalink: /products/
 <!-- Call to Action Section -->
 <section class="section" style="background-color: var(--color-primary); color: var(--text-white); text-align: center;">
     <div class="container">
-        <h2 style="color: var(--text-white); margin-bottom: 1.5rem;">🤝 Ready to Discuss Your Platform Needs?</h2>
-        <p style="font-size: var(--font-size-lg); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; color: rgba(255, 255, 255, 0.9);">
+        <h2 style="color: var(--text-white); margin-bottom: 1.5rem;"><img src="{{ '/logos/discuss.svg' | relative_url }}" alt="discuss" style="display: inline; vertical-align: middle; width: 1.5em; height: 1.5em; margin-right: 0.5rem;"> Ready to Discuss Your Platform Needs?</h2>
+        <p style="font-size: var(--font-size-lg); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; color: white;">
             Our sovereign platforms are designed for air-gapped, regulated, and sensitive environments. Let's discuss how we can help secure your infrastructure and data sovereignty.
         </p>
 

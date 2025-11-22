@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Theme system
     initThemeSystem();
     
+    // Techie mode system
+    initTechieSystem();
+    
     // Mobile menu toggle - with debug logging
     console.log('Initializing mobile menu...');
     initMobileMenu();
@@ -82,6 +85,515 @@ function initThemeSystem() {
         
         // Track theme change
         trackEvent('theme_changed', { theme: theme });
+    }
+}
+
+// Techie Mode System - Toggle between Visitor and Techie fonts
+function initTechieSystem() {
+    const techieToggle = document.getElementById('techie-toggle');
+    const visitorIcons = document.querySelectorAll('.techie-visitor-icon');
+    const techieIcons = document.querySelectorAll('.techie-techie-icon');
+    
+    let headingObserver = null;
+    
+    // Get saved techie mode or default to false (visitor mode)
+    const savedTechie = localStorage.getItem('techie') || 'false';
+    
+    // Apply saved techie mode
+    setTechieMode(savedTechie);
+    
+    // Techie toggle click handler
+    if (techieToggle) {
+        techieToggle.addEventListener('click', function() {
+            const currentTechie = document.documentElement.getAttribute('data-techie') || 'false';
+            const newTechie = currentTechie === 'true' ? 'false' : 'true';
+            setTechieMode(newTechie);
+        });
+    }
+    
+    function setTechieMode(techie) {
+        document.documentElement.setAttribute('data-techie', techie);
+        localStorage.setItem('techie', techie);
+        
+        if (techie === 'true') {
+            // Set up intersection observer for headings
+            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            headings.forEach(heading => {
+                if (!heading.dataset.originalHTML) {
+                    heading.dataset.originalHTML = heading.innerHTML;
+                }
+                // Reset to original state
+                heading.innerHTML = heading.dataset.originalHTML;
+                heading.dataset.typed = 'false';
+            });
+            
+            // Create observer
+            headingObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.target.dataset.typed !== 'true') {
+                        entry.target.dataset.typed = 'true';
+                        typeHeading(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            // Observe all headings
+            headings.forEach(heading => {
+                headingObserver.observe(heading);
+            });
+            
+            // Type headings that are already in view
+            headings.forEach(heading => {
+                const rect = heading.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0 && heading.dataset.typed !== 'true') {
+                    heading.dataset.typed = 'true';
+                    typeHeading(heading);
+                }
+            });
+        } else {
+            // Disconnect observer
+            if (headingObserver) {
+                headingObserver.disconnect();
+                headingObserver = null;
+            }
+            
+            // Restore original text and remove effects
+            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            headings.forEach(heading => {
+                if (heading.dataset.originalHTML) {
+                    heading.innerHTML = heading.dataset.originalHTML;
+                    heading.dataset.typed = 'false';
+                }
+            });
+        }
+        
+        // Update icons
+        if (techie === 'true') {
+            visitorIcons.forEach(icon => icon.style.display = 'none');
+            techieIcons.forEach(icon => icon.style.display = 'block');
+        } else {
+            visitorIcons.forEach(icon => icon.style.display = 'block');
+            techieIcons.forEach(icon => icon.style.display = 'none');
+        }
+        
+        // Track techie mode change
+        trackEvent('techie_mode_changed', { techie: techie });
+    }
+}
+
+// Typing effect for headings in techie mode
+function typeHeading(heading) {
+    const html = heading.dataset.originalHTML || heading.innerHTML;
+    
+    // Special handling for the hero heading with heart icon
+    if (html.includes('heart.svg')) {
+        heading.innerHTML = '';
+        // Create cursor element
+        const cursor = document.createElement('span');
+        cursor.textContent = '_';
+        cursor.style.animation = 'blink 1s step-end infinite';
+        heading.appendChild(cursor);
+        
+        // Define the typing sequence step by step
+        const steps = [
+            () => { // Type "W"
+                const textNode = document.createTextNode('W');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Insert heart icon
+                const heartImg = document.createElement('img');
+                heartImg.src = '/logos/heart.svg';
+                heartImg.alt = 'heart';
+                heartImg.style.display = 'inline';
+                heartImg.style.verticalAlign = 'middle';
+                heartImg.style.width = '1.2em';
+                heartImg.style.height = '1.2em';
+                heading.insertBefore(heartImg, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "O"
+                const textNode = document.createTextNode('O');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "p"
+                const textNode = document.createTextNode('p');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "n"
+                const textNode = document.createTextNode('n');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "S"
+                const textNode = document.createTextNode('S');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "u"
+                const textNode = document.createTextNode('u');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "r"
+                const textNode = document.createTextNode('r');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "c"
+                const textNode = document.createTextNode('c');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            }
+        ];
+        
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step < steps.length) {
+                steps[step]();
+                step++;
+            } else {
+                clearInterval(interval);
+                // Cursor continues blinking
+            }
+        }, 50); // typing speed
+    } else if (html.includes('community.svg')) {
+        // Special handling for the footer heading with community icon
+        heading.innerHTML = '';
+        // Create cursor element
+        const cursor = document.createElement('span');
+        cursor.textContent = '_';
+        cursor.style.animation = 'blink 1s step-end infinite';
+        heading.appendChild(cursor);
+        
+        // Define the typing sequence step by step
+        const steps = [
+            () => { // Insert community icon
+                const communityImg = document.createElement('img');
+                communityImg.src = '/logos/community.svg';
+                communityImg.alt = 'community';
+                communityImg.style.display = 'inline';
+                communityImg.style.verticalAlign = 'middle';
+                communityImg.style.width = '1.5em';
+                communityImg.style.height = '1.5em';
+                communityImg.style.marginRight = '0.5rem';
+                heading.insertBefore(communityImg, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "J"
+                const textNode = document.createTextNode('J');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "i"
+                const textNode = document.createTextNode('i');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "n"
+                const textNode = document.createTextNode('n');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "O"
+                const textNode = document.createTextNode('O');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "u"
+                const textNode = document.createTextNode('u');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "r"
+                const textNode = document.createTextNode('r');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "C"
+                const textNode = document.createTextNode('C');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "m"
+                const textNode = document.createTextNode('m');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "m"
+                const textNode = document.createTextNode('m');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "u"
+                const textNode = document.createTextNode('u');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "n"
+                const textNode = document.createTextNode('n');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "i"
+                const textNode = document.createTextNode('i');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "t"
+                const textNode = document.createTextNode('t');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "y"
+                const textNode = document.createTextNode('y');
+                heading.insertBefore(textNode, cursor);
+            }
+        ];
+        
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step < steps.length) {
+                steps[step]();
+                step++;
+            } else {
+                clearInterval(interval);
+                // Cursor continues blinking
+            }
+        }, 50); // typing speed
+    } else if (html.includes('discuss.svg')) {
+        // Special handling for the products heading with discuss icon
+        heading.innerHTML = '';
+        // Create cursor element
+        const cursor = document.createElement('span');
+        cursor.textContent = '_';
+        cursor.style.animation = 'blink 1s step-end infinite';
+        heading.appendChild(cursor);
+        
+        // Define the typing sequence step by step
+        const steps = [
+            () => { // Insert discuss icon
+                const discussImg = document.createElement('img');
+                discussImg.src = '/logos/discuss.svg';
+                discussImg.alt = 'discuss';
+                discussImg.style.display = 'inline';
+                discussImg.style.verticalAlign = 'middle';
+                discussImg.style.width = '1.5em';
+                discussImg.style.height = '1.5em';
+                discussImg.style.marginRight = '0.5rem';
+                heading.insertBefore(discussImg, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "R"
+                const textNode = document.createTextNode('R');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "a"
+                const textNode = document.createTextNode('a');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "d"
+                const textNode = document.createTextNode('d');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "y"
+                const textNode = document.createTextNode('y');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "t"
+                const textNode = document.createTextNode('t');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "D"
+                const textNode = document.createTextNode('D');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "i"
+                const textNode = document.createTextNode('i');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "s"
+                const textNode = document.createTextNode('s');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "c"
+                const textNode = document.createTextNode('c');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "u"
+                const textNode = document.createTextNode('u');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "s"
+                const textNode = document.createTextNode('s');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "s"
+                const textNode = document.createTextNode('s');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "Y"
+                const textNode = document.createTextNode('Y');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "u"
+                const textNode = document.createTextNode('u');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "r"
+                const textNode = document.createTextNode('r');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "P"
+                const textNode = document.createTextNode('P');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "l"
+                const textNode = document.createTextNode('l');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "a"
+                const textNode = document.createTextNode('a');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "t"
+                const textNode = document.createTextNode('t');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "f"
+                const textNode = document.createTextNode('f');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "o"
+                const textNode = document.createTextNode('o');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "r"
+                const textNode = document.createTextNode('r');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "m"
+                const textNode = document.createTextNode('m');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type " "
+                const textNode = document.createTextNode(' ');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "N"
+                const textNode = document.createTextNode('N');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "e"
+                const textNode = document.createTextNode('e');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "d"
+                const textNode = document.createTextNode('d');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "s"
+                const textNode = document.createTextNode('s');
+                heading.insertBefore(textNode, cursor);
+            },
+            () => { // Type "?"
+                const textNode = document.createTextNode('?');
+                heading.insertBefore(textNode, cursor);
+            }
+        ];
+        
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step < steps.length) {
+                steps[step]();
+                step++;
+            } else {
+                clearInterval(interval);
+                // Cursor continues blinking
+            }
+        }, 50); // typing speed
+    } else {
+        // Default typing for other headings
+        heading.innerHTML = '';
+        const text = html.replace(/<[^>]*>/g, ''); // Strip HTML tags for plain text
+        // Create cursor element
+        const cursor = document.createElement('span');
+        cursor.textContent = '_';
+        cursor.style.animation = 'blink 1s step-end infinite';
+        heading.appendChild(cursor);
+        
+        let i = 0;
+        const interval = setInterval(() => {
+            if (i < text.length) {
+                const textNode = document.createTextNode(text.charAt(i));
+                heading.insertBefore(textNode, cursor);
+                i++;
+            } else {
+                clearInterval(interval);
+                // Cursor continues blinking
+            }
+        }, 50); // typing speed
     }
 }
 
