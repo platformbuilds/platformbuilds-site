@@ -11,7 +11,7 @@ permissions:
 jobs:
   mirror-and-delete:
     # Only act on issues created from the website (title set by your JS)
-    if: ${{ startsWith(github.event.issue.title, 'Application from website') }}
+    if: ${{ startsWith(github.event.issue.title, 'Application from Website') }}
     runs-on: ubuntu-latest
     timeout-minutes: 1
 
