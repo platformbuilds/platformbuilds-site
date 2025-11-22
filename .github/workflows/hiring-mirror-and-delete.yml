@@ -13,6 +13,7 @@ jobs:
     # Only act on issues created from the website (title set by your JS)
     if: ${{ startsWith(github.event.issue.title, 'Application from website') }}
     runs-on: ubuntu-latest
+    timeout-minutes: 1
 
     steps:
       - name: Install jq
@@ -36,7 +37,7 @@ jobs:
 
           echo "Fetching source issue #${ISSUE_NUMBER}…"
 
-          issue_json=$(curl -sSL \
+          issue_json=$(timeout 5s curl -sSL \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}")
@@ -55,7 +56,7 @@ jobs:
           # Build search query: repo:TARGET_OWNER/TARGET_REPO is:issue is:open "Original author: @author"
           encoded_query=$(printf 'repo:%s/%s is:issue is:open "Original author: @%s"' "$TARGET_OWNER" "$TARGET_REPO" "$author" | jq -sRr @uri)
 
-          search_resp=$(curl -sSL \
+          search_resp=$(timeout 5s curl -sSL \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/search/issues?q=${encoded_query}")
@@ -78,7 +79,7 @@ jobs:
 
             echo "Updating source issue #${ISSUE_NUMBER} as duplicate and closing…"
 
-            curl -sSL \
+            timeout 5s curl -sSL \
               -X PATCH \
               -H "Authorization: Bearer ${GH_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
@@ -92,7 +93,7 @@ jobs:
 
             echo "Commenting on source issue to inform candidate…"
 
-            curl -sSL \
+            timeout 5s curl -sSL \
               -X POST \
               -H "Authorization: Bearer ${GH_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
@@ -108,17 +109,17 @@ jobs:
           private_body=$(cat <<EOF
             Application submitted via website → public intake issue → mirrored by GitHub Actions.
                     
-            **Origin            al author:** @${author}
-            **Origin            al issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
+            **Original author:** @${author}
+            **Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
                     
-            ---         
+            ---
             
-            ${body}         
-            EOF         
-                                  )
+            ${body}
+            EOF
+                      )
             
-                                  create_payload=$(jq -n \
-                                    --arg title "$title" \
+                      create_payload=$(jq -n \
+                        --arg title "$title" \
                         --arg body "$private_body" \
                         '{
                           title: $title,
@@ -128,7 +129,7 @@ jobs:
 
           echo "Creating issue in ${TARGET_OWNER}/${TARGET_REPO}…"
 
-          create_resp=$(curl -sSL \
+          create_resp=$(timeout 5s curl -sSL \
             -X POST \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
@@ -149,7 +150,7 @@ jobs:
 
           echo "Scrubbing and closing source issue before deletion…"
 
-          curl -sSL \
+          timeout 5s curl -sSL \
             -X PATCH \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
@@ -162,7 +163,7 @@ jobs:
             --arg id "$node_id" \
             '{ query: "mutation DeleteIssue($id:ID!){ deleteIssue(input:{issueId:$id}){ clientMutationId }}", variables: { id: $id } }')
 
-          delete_resp=$(curl -sSL \
+          delete_resp=$(timeout 5s curl -sSL \
             -X POST \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
