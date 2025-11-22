@@ -7,6 +7,7 @@ color: "blue"
 order: 1
 featured: true
 excerpt: "Explore our open source projects and platforms for AI, observability, and cloud-native infrastructure."
+permalink: /projects/
 ---
 
 <section class="section">
@@ -18,6 +19,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <div class="card">
 <h3>AI & Machine Learning Platforms</h3>
 
+<div class="grid grid-2">
 <div class="card">
 <h4>Cosmolet</h4>
 <p>A comprehensive networking platform for AI workloads, providing advanced network observability and optimization for distributed AI systems.</p>
@@ -27,7 +29,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Network performance analytics</li>
 <li>Container networking for AI</li>
 </ul>
-<p><a href="/projects/cosmolet/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/cosmolet" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p style="margin-top: 1rem;"><a href="/projects/cosmolet/" class="btn btn-primary" style="vertical-align: middle;">Learn More</a> <a href="https://github.com/platformbuilds/cosmolet" target="_blank" class="btn btn-secondary" style="vertical-align: middle;"><img src="/logos/github-logo.svg" width="16" height="16" alt="GitHub" style="margin-right: 8px; vertical-align: baseline;"> Github</a></p>
 </div>
 
 <div class="card">
@@ -39,7 +41,8 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Multi-LLM abstraction layers</li>
 <li>Regulatory compliance frameworks</li>
 </ul>
-<p><a href="/projects/platform-engineering/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p style="margin-top: 1rem;"><a href="/projects/platform-engineering/" class="btn btn-primary" style="vertical-align: middle;">Learn More</a> <a href="https://github.com/platformbuilds" target="_blank" class="btn btn-secondary" style="vertical-align: middle;"><img src="/logos/github-logo.svg" width="16" height="16" alt="GitHub" style="margin-right: 8px; vertical-align: baseline;"> Github</a></p>
+</div>
 </div>
 </div>
 
@@ -55,7 +58,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>AI-powered anomaly detection</li>
 <li>Privacy-first architecture</li>
 </ul>
-<p><a href="/projects/miradorstack/" class="btn btn-primary">Learn More</a> <a href="https://github.com/platformbuilds/miradorstack" target="_blank" class="btn btn-secondary">View on GitHub</a></p>
+<p style="margin-top: 1rem;"><a href="/projects/miradorstack/" class="btn btn-primary" style="vertical-align: middle;">Learn More</a> <a href="https://github.com/platformbuilds/miradorstack" target="_blank" class="btn btn-secondary" style="vertical-align: middle;"><img src="/logos/github-logo.svg" width="16" height="16" alt="GitHub" style="margin-right: 8px; vertical-align: baseline;"> Github</a></p>
 </div>
 
 </div>
@@ -65,6 +68,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 
 <p>All our projects welcome contributions from the community. Whether you're fixing bugs, adding features, or improving documentation, your contributions help build better platforms for everyone.</p>
 
+<div class="grid grid-2">
 <div class="card">
 <h4>How to Contribute</h4>
 <ul>
@@ -87,12 +91,14 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 </ul>
 </div>
 </div>
+</div>
 
 <div class="card">
 <h3>Project Status & Roadmap</h3>
 
 <p>Stay updated with our project development progress and upcoming features.</p>
 
+<div class="grid grid-2">
 <div class="card">
 <h4>Active Development</h4>
 <ul>
@@ -110,6 +116,7 @@ excerpt: "Explore our open source projects and platforms for AI, observability, 
 <li>Roadmap planning sessions</li>
 <li>User feedback surveys</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
