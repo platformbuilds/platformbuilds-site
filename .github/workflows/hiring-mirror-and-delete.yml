@@ -10,21 +10,26 @@ permissions:
 
 jobs:
   mirror-and-delete:
-    # Only act on issues created from the website
-    if: ${{ startsWith(github.event.issue.title, 'Hiring Application from website') }}
+    # Only act on issues created from the website (title set by your JS)
+    if: ${{ startsWith(github.event.issue.title, 'Application from website') }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Mirror to private repo and delete public issue
+      - name: Mirror to private repo (with duplicate check) and delete public issue
         env:
           GH_TOKEN: ${{ secrets.HIRING_REPO_TOKEN }}
+
+          # Source: public site repo
           SOURCE_OWNER: platformbuilds
           SOURCE_REPO: platformbuilds.github.io
+
+          # Target: private hiring repo
           TARGET_OWNER: platformbuilds
           TARGET_REPO: hiring
+
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
           set -euo pipefail
@@ -45,26 +50,81 @@ jobs:
           echo "Source author: $author"
           echo "Source node_id: $node_id"
 
+          echo "Checking for existing open applications in ${TARGET_OWNER}/${TARGET_REPO} for @${author}…"
+
+          # Build search query: repo:TARGET_OWNER/TARGET_REPO is:issue is:open "Original author: @author"
+          encoded_query=$(printf 'repo:%s/%s is:issue is:open "Original author: @%s"' "$TARGET_OWNER" "$TARGET_REPO" "$author" | jq -sRr @uri)
+
+          search_resp=$(curl -sSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/search/issues?q=${encoded_query}")
+
+          open_count=$(echo "$search_resp" | jq -r '.total_count')
+
+          echo "Open applications found for @${author}: ${open_count}"
+
+          if [ "$open_count" -gt 0 ]; then
+            echo "Existing open application detected. Marking this intake issue as duplicate and NOT mirroring."
+
+            duplicate_body="We detected that you already have an open application with us linked to your GitHub account (@${author}). Please wait for that application to be processed before submitting another. If you believe this is an error, contact us at hello@platformbuilds.org."
+
+            update_payload=$(jq -n \
+              --arg body "$duplicate_body" \
+              '{
+                body: $body,
+                state: "closed"
+              }')
+
+            echo "Updating source issue #${ISSUE_NUMBER} as duplicate and closing…"
+
+            curl -sSL \
+              -X PATCH \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}" \
+              -d "$update_payload"
+
+            # Optional: add a comment too (user will get a notification)
+            comment_payload=$(jq -n \
+              --arg msg "We detected an existing open application associated with @${author}. We won't create a new one until the current application is closed in our internal system." \
+              '{body: $msg}')
+
+            echo "Commenting on source issue to inform candidate…"
+
+            curl -sSL \
+              -X POST \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}/comments" \
+              -d "$comment_payload"
+
+            echo "Duplicate handling complete. Not mirroring; not deleting this intake issue (it is closed and scrubbed)."
+            exit 0
+          fi
+
+          echo "No existing open applications for @${author}. Proceeding to mirror."
+
           private_body=$(cat <<EOF
             Application submitted via website → public intake issue → mirrored by GitHub Actions.
-
-            **Original author:** @${author}
-            **Original issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
-
-            ---
+                    
+            **Origin            al author:** @${author}
+            **Origin            al issue (now deleted):** https://github.com/${SOURCE_OWNER}/${SOURCE_REPO}/issues/${ISSUE_NUMBER}
+                    
+            ---         
             
-            ${body}
-            EOF
-            )
-
-            create_payload=$(jq -n \
-              --arg title "$title" \
-              --arg body "$private_body" \
-              '{
-                title: $title,
-                body: $body,
-                labels: ["candidate", "source:public-intake"]
-              }')
+            ${body}         
+            EOF         
+                                  )
+            
+                                  create_payload=$(jq -n \
+                                    --arg title "$title" \
+                        --arg body "$private_body" \
+                        '{
+                          title: $title,
+                          body: $body,
+                          labels: ["candidate", "source:public-intake"]
+                        }')
 
           echo "Creating issue in ${TARGET_OWNER}/${TARGET_REPO}…"
 
