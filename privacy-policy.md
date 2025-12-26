@@ -7,6 +7,7 @@ subtitle: How we protect and handle your data
 
 <p class="text-muted">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
 
+<div class="card prose" style="margin-top: 1rem;">
 
 ## 1. Introduction
 
