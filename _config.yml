@@ -72,6 +72,8 @@ navigation:
         url: /about/
       - name: Hiring
         url: /hiring/
+      - name: Privacy Policy
+        url: /privacy-policy/ 
   - name: Community
     url: https://github.com/orgs/platformbuilds/discussions
   - name: Blog

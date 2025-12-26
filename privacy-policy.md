@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+permalink: /privacy-policy/
 subtitle: How we protect and handle your data
 ---
 
@@ -91,7 +92,7 @@ subtitle: How we protect and handle your data
         <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
         <ul>
             <li>Email: privacy@platformbuilds.org</li>
-            <li>Address: [Your Business Address]</li>
+            <li>Address: SONESTAA IWOODS, BELLANDUR, BANGALORE - 560103</li>
         </ul>
 
         <h2>13. Consent</h2>
