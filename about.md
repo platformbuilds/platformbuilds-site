@@ -182,34 +182,6 @@ permalink: /about/
 </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);">
-<div class="container">
-<h2 style="text-align: center;">Founders</h2>
-
-<div class="founders-container">
-  <div class="founder-card">
-    <img src="/assets/images/shiva-rv.jpg" alt="Shiva RV" class="founder-image">
-    <h3>Shiva RV</h3>
-    <p><strong>Founder</strong></p>
-    <p>Shiva Kumar R V is a seasoned infrastructure and platform engineering professional with over 16+ years of experience. He is passionate about emerging security threats and innovations, last served as Deputy Chief of AI Build - Platforms at NPCI, where he ensured the availability, scalability, and security of India's major payment platforms. His expertise includes building security-aware engineering solutions, DevSecOps, and AI-powered platforms. He has held leadership roles at Grab, Razorpay, Swiggy, and other tech giants, focusing on cyber security, compliance, and scalable architectures.</p>
-    <div class="social-links">
-      <a href="https://github.com/aarvee11" target="_blank"><img src="/logos/github-logo.svg" alt="GitHub" class="social-icon"></a>
-      <a href="https://linkedin.com/in/aarvee11" target="_blank"><img src="/logos/linkedin-logo.svg" alt="LinkedIn" class="social-icon"></a>
-    </div>
-  </div>
-  <div class="founder-card">
-    <img src="/assets/images/rahul-khattar.jpg" alt="Rahul Khattar" class="founder-image">
-    <h3>Rahul Khattar</h3>
-    <p><strong>Founder</strong></p>
-    <p>Rahul Khattar is a techno-functional professional with an MCA in Computer Sciences from University of Pune. He brings over 20+ years of experience in management consulting, cyber security, and enterprise software. His expertise includes coaching teams, go-to-market strategies, CRM, and delivering business outcomes for clients across India. He has held leadership roles at EY, Deloitte, and other prominent firms, specializing in cyber risk mitigation, AI/ML integration, and digital transformation.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/rahul-khattar-412b972/" target="_blank"><img src="/logos/linkedin-logo.svg" alt="LinkedIn" class="social-icon"></a>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
 <section class="section">
 <div class="container">
 <h2 style="text-align: center;">Our Approach</h2>
